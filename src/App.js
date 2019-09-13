@@ -1,15 +1,11 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Navigator from './Components/Navigator'
+import Home from './Components/Home'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <Navigator />
-      <Button variant="content" color="red">
-      Hello
-      </Button>
+    <Home />
     </div>
   );
 }
