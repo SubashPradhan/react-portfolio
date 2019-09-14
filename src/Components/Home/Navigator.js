@@ -145,30 +145,30 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <Divider />
-        <List component="nav" aria-label="main mailbox folders">
+        <List component="nav">
           <ListItem button>
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Inbox" />
+            <ListItemText primary="Home" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <StorageRoundedIcon />
             </ListItemIcon>
-            <ListItemText primary="Drafts" />
+            <ListItemText primary="Storage" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <ContactMailIcon />
             </ListItemIcon>
-            <ListItemText primary="Drafts" />
+            <ListItemText primary="Contact" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <InfoTwoToneIcon />
             </ListItemIcon>
-            <ListItemText primary="Drafts" />
+            <ListItemText primary="About Me" />
           </ListItem>
         </List>
       </Drawer>

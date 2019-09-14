@@ -6,8 +6,8 @@ class Home extends Component {
 
   render(){
     return <div>
-      <Navigator />
       <View />
+      <Navigator />
     </div>
 
   }
