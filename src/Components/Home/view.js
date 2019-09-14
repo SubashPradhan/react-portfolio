@@ -1,12 +1,6 @@
 import React from 'react'
 import '../../Components/Style/Home.css'
-import Typist from 'react-typist'
-import Sky from 'react-sky';import styled, { keyframes } from "styled-components";
-import BounceInUp from "@bit/formidablelabs.react-animations.bounce-in-up";
-const BounceInUpAnimation = keyframes`${BounceInUp}`;
-const BounceInUpDiv = styled.div`
-  animation: infinite 5s ${BounceInUpAnimation};
-`;
+import Sky from 'react-sky'
 
 export default function View() {
   return <div align='center'>
@@ -27,21 +21,16 @@ export default function View() {
       how={40}
       time={15}
       size={'100px'}
-      // background={'palettedvioletred'}
     />
-    {/* <Typist> */}
-    <BounceInUpDiv>
-      
+
     <img src='Subash.JPG' alt='Subash' className='my-picture' />
-    </BounceInUpDiv>
-    <Typist.Delay ms={5000}/>
-      <div className='welcome-text'>
-        Hi I am Subash Pradhan !<br />
-        A Full Stack Developer !<br />
-        Welcome To My PortFolio !<br />
-        Nice To Meet You !
+    <div className='welcome-text'>
+      Hi I am Subash Pradhan !<br />
+      A Full Stack Developer !<br />
+      Welcome To My PortFolio !<br />
+      Nice To Meet You !
    </div>
-    {/* </Typist> */}
+
   </div>
 
 
