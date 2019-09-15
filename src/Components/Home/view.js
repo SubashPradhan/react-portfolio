@@ -1,10 +1,14 @@
 import React from 'react'
 import '../../Components/Style/Home.css'
 import Sky from 'react-sky'
+import Typist from 'react-typist'
 
-export default function View() {
+export default function View(props) {
+  const {background} = props
+
   return <div align='center'>
-    <Sky
+    <div className="sky">
+    {background && <Sky
       images={{
         0: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png',
         1: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
@@ -18,18 +22,21 @@ export default function View() {
         9: "https://library.kissclipart.com/20181123/oyq/kissclipart-sql-db-clipart-microsoft-azure-sql-database-d8fe86afd77ee124.jpg",
         10: "https://www.resourcifi.com/wp-content/themes/resourcifi-child/img/express-min.png"
       }}
-      how={40}
-      time={15}
+      how={50}
+      time={20}
       size={'100px'}
-    />
-
+    />}
+  </div>
     <img src='Subash.JPG' alt='Subash' className='my-picture' />
+
+    <Typist>
     <div className='welcome-text'>
       Hi I am Subash Pradhan !<br />
       A Full Stack Developer !<br />
       Welcome To My PortFolio !<br />
       Nice To Meet You !
    </div>
+   </Typist>
 
   </div>
 

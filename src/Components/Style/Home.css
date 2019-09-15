@@ -10,3 +10,11 @@
   font-size: 40px;
   color: blueviolet
 }
+
+.sky{
+  animation-delay: 10s;
+  -webkit-animation-delay: 10s; 
+  transition-delay: 10s;
+
+
+}

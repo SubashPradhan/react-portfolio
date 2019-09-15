@@ -3,10 +3,17 @@ import React, { Component } from 'react'
 import View from './view'
 
 class Home extends Component {
-
-  render(){
+  state = { background: '' }
+  componentDidMount() {
+    setTimeout(function () {
+      this.setState({
+        background: 'true'
+      })
+    }.bind(this), 6500)
+  }
+  render() {
     return <div>
-      <View />
+      <View background={this.state.background} />
       {/* <Navigator /> */}
     </div>
 
