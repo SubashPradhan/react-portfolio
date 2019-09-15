@@ -4,12 +4,13 @@ import View from './view'
 
 class Home extends Component {
   state = { background: '' }
+  
   componentDidMount() {
     setTimeout(function () {
       this.setState({
         background: 'true'
       })
-    }.bind(this), 6500)
+    }.bind(this), 7000)
   }
   render() {
     return <div>

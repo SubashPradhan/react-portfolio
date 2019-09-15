@@ -8,13 +8,14 @@
 .welcome-text{
   font-family: 'Rock Salt', cursive;
   font-size: 40px;
-  color: blueviolet
-}
-
-.sky{
-  animation-delay: 10s;
-  -webkit-animation-delay: 10s; 
-  transition-delay: 10s;
-
-
+  color: yellow;
+  background-color: #a36173;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 500px;
+  height: 250px;
+  min-height: auto;
+  min-width: auto;
+  margin-top: 40px;
+  opacity: 0.7;
 }
