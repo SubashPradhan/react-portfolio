@@ -15,7 +15,6 @@ class Home extends Component {
   render() {
     return <div>
       <View background={this.state.background} />
-      {/* <Navigator /> */}
     </div>
 
   }
