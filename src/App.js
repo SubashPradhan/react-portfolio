@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './Components/Home'
+import About from './Components/About'
 import Navigator from './Components/Home/Navigator'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
@@ -22,9 +23,7 @@ class App extends Component {
       <Background />
       <Slider {...settings}>
         <Home />
-        <div>
-          <img src="https://inchoo.net/wp-content/uploads/2017/08/Slick_Carousel.png" alt='hey'/>
-        </div>
+        <About />
       </Slider>
     </div>
 

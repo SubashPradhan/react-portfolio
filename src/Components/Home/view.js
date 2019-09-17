@@ -10,7 +10,7 @@ export default function View(props) {
       <div className='welcome-text'>
         Hi I am Subash Pradhan !<br />
         A Full Stack Developer !<br />
-        Welcome To My PortFolio !<br />
+        Welcome To My Portfolio !<br />
         Nice To Meet You !
    </div>
     </Typist>
