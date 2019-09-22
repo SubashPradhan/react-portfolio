@@ -6,6 +6,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Background from './Components/Home/Background';
+import Portfolio from './Components/Portfolio'
 
 class App extends Component {
 
@@ -19,11 +20,12 @@ class App extends Component {
     };
 
     return <div>
-      <Navigator />
+      {/* <Navigator /> */}
       <Background />
       <Slider {...settings}>
         <Home />
         <About />
+        <Portfolio />
       </Slider>
     </div>
 
