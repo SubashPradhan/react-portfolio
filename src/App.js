@@ -20,7 +20,7 @@ class App extends Component {
     };
 
     return <div>
-      {/* <Navigator /> */}
+      <Navigator />
       <Background />
       <Slider {...settings}>
         <Home />

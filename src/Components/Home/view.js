@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Components/Style/Home.css'
+import '../Style/Home.css'
 import Typist from 'react-typist'
 
 export default function View(props) {
