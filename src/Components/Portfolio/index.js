@@ -1,34 +1,51 @@
 import React, { Component } from 'react';
 import View from '../Portfolio/view';
-import gitgudImage from '../images/gitgud-1.png'
-import gitgudThumbnail from '../images/gitgud.png'
 
 const IMAGES =
   [{
-    src: gitgudImage,
-    thumbnail: gitgudThumbnail,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-    isSelected: true,
-    caption: "Real world project"
+    src: require('../images/gitgud.gif'),
+    thumbnail: require('../images/gitgud.png'),
+    thumbnailWidth: 800,
+    thumbnailHeight: 250,
+    tags: [{ value: "Git-gud", title: "Git-gud" }],
+    caption: "A validator of your GitHub profile and Git use, designed to provide feedback for job seekers and graduated students.REAL WORLD PROJECT - GraphQl, React-Apollo, Face-api"
   },
   {
-    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-    thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-    thumbnailWidth: 320,
-    thumbnailHeight: 212,
-    tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-    caption: "Boats (Jeshu John - designerspics.com)"
+    src: require('../images/movie-app.gif'),
+    thumbnail: require('../images/movie-thumb.png'),
+    thumbnailWidth: 800,
+    thumbnailHeight: 250,
+    tags: [{ value: "Movie-app", title: "Movie-app" }],
+    caption: "Simple movie- search app for two days Hackathon at Codaisseur.HACKATHON-PROJECT - Vue CLI, Vuetify, Axios "
   },
 
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-    thumbnailWidth: 320,
-    thumbnailHeight: 212
-  }]
-export  default class Portfolio extends Component {
+    src: require('../images/hangman.gif'),
+    thumbnail: require('../images/hangman.png'),
+    thumbnailWidth: 600,
+    thumbnailHeight: 250,
+    tags: [{ value: "Hangaman-game", title: "Hangaman" }],
+    caption: "A fullstack Hangman game with logins.GROUP-PROJECT - Express, Sequelize, Bcrypt, Jsonwebtoken, React, Redux"
+  },
+  {
+    src: require('../images/fullstack.gif'),
+    thumbnail: require('../images/first-react.png'),
+    thumbnailWidth: 600,
+    thumbnailHeight: 250,
+    tags: [{ value: "First-fullstack-app", title: "FullStack" }],
+    caption: "My Very first FullStack App. GROUP PROJECT - Sequelize, Express, React, Redux, Rest-Api "
+  },
+  {
+    src: require('../images/html-portfolio.gif'),
+    thumbnail: require('../images/html-portfolio.png'),
+    thumbnailWidth: 600,
+    thumbnailHeight: 250,
+    tags: [{ value: "Plain-HTML-Portfolio", title: "First-PortFolio" }],
+    caption: "My very first portfolio using plain HTML, CSS, Javascript, Jquery."
+  }
+]
+export default class Portfolio extends Component {
   render() {
     return <View images={IMAGES} />
-}
+  }
 }

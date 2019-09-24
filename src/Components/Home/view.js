@@ -3,15 +3,14 @@ import '../Style/Home.css'
 import Typist from 'react-typist'
 
 export default function View(props) {
-  
+
   return <div align='center'>
     <img src='Subash.JPG' alt='Subash' className='my-picture' />
     <Typist>
       <div className='welcome-text'>
-        Hi I am Subash Pradhan !<br />
-        A Full Stack Developer !<br />
-        Welcome To My Portfolio !<br />
-        Nice To Meet You !
+        Name: Subash Pradhan<br />
+        A Full-Stack Developer<br />
+        Welcome & Nice To Meet You !!
    </div>
     </Typist>
   </div>

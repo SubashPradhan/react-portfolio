@@ -10,6 +10,7 @@
     "react-animations": "^1.0.0",
     "react-dom": "^16.9.0",
     "react-grid-gallery": "^0.5.5",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.1.1",
     "react-sky": "^1.1.0",
     "react-slick": "^0.25.2",
