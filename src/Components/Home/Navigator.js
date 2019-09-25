@@ -88,11 +88,7 @@ export default function MiniDrawer() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const port = (e) => {
-    e.preventDefault()
-    
-  }
-
+  
   function handleDrawerOpen() {
     setOpen(true);
   }
@@ -159,9 +155,9 @@ export default function MiniDrawer() {
           </ListItem>
           <ListItem button>
             <ListItemIcon >
-              {/* <NavLink to='/Portfolio'> */}
-                <StorageRoundedIcon onClick={port} />
-              {/* </NavLink> */}
+              <NavLink to='/Portfolio'>
+                <StorageRoundedIcon />
+              </NavLink>
             </ListItemIcon>
             <ListItemText primary="Storage" />
           </ListItem>
