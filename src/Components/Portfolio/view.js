@@ -1,6 +1,7 @@
 import React from 'react'
 import Gallery from 'react-grid-gallery';
 import Tada from 'react-reveal/Tada';
+import Reveal from 'react-reveal/Reveal';
 import '../../Components/Style/Portfolio.css'
 
 export default function View(props) {
@@ -9,15 +10,16 @@ export default function View(props) {
     <Tada>
       <h1>My Portfolio </h1>
     </Tada>
-    <div className='portfolio'>
-      <Gallery
-        images={images}
-        backdropClosesModal={true}
-        margin={25}
-        rowHeight={200}
-        backgroundColor={'#FFA500'}
-      />
-    </div>
+    <Reveal effect='fadeInUp'>
+      <div className='portfolio'>
+        <Gallery
+          images={images}
+          backdropClosesModal={true}
+          margin={25}
+          rowHeight={250}
+        />
+      </div>
+    </Reveal>
   </div>
 }
 

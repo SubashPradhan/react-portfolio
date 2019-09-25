@@ -1,14 +1,16 @@
 import React, { Component } from "react"
 import Sky from 'react-sky'
 
-class Background extends Component{
+class Background extends Component {
   state = { background: '' }
+
   render() {
     setTimeout(function () {
       this.setState({
         background: 'true'
       })
     }.bind(this), 6000)
+
     return <div>
       {this.state.background && <Sky
         images={{
@@ -28,14 +30,13 @@ class Background extends Component{
           13: "https://cdn.imgbin.com/17/2/7/imgbin-docker-logo-kubernetes-software-deployment-engineer-logo-docker-logo-qesaY9bNnpr9RwKq2cbqrtZf6.jpg",
           14: "https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png"
         }}
-        how={50}
+        how={35}
         time={15}
         size={'100px'}
       />}
     </div>
-
-    }
   }
+}
 // }
 
 export default Background
