@@ -9,14 +9,13 @@ import Background from './Components/Home/Background';
 import Portfolio from './Components/Portfolio'
 
 class App extends Component {
-
   render() {
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1  
+      slidesToScroll: 1
     };
 
     return <div>
@@ -24,11 +23,10 @@ class App extends Component {
       <Background />
       <Slider {...settings}>
         <Home />
-        <About />
         <Portfolio />
+        <About />
       </Slider>
     </div>
-
   }
 }
 

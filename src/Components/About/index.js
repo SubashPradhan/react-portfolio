@@ -3,7 +3,9 @@ import View from './view'
 
 class About extends Component{
   render() {
-    return <View />
+    return<>
+     <View />
+    </>
   }
 } 
 
