@@ -19,7 +19,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Redirect, Link } from 'react-router-dom'
 
 const drawerWidth = 240;
 
@@ -88,9 +88,9 @@ export default function MiniDrawer() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const port = (e) => {
+  function port(e){
     e.preventDefault()
-    
+    return <Redirect to='/Portfolio'/>
   }
 
   function handleDrawerOpen() {
@@ -159,17 +159,17 @@ export default function MiniDrawer() {
           </ListItem>
           <ListItem button>
             <ListItemIcon >
-              {/* <NavLink to='/Portfolio'> */}
+              {/* <Link to='/Portfolio'> */}
                 <StorageRoundedIcon onClick={port} />
-              {/* </NavLink> */}
+              {/* </Link> */}
             </ListItemIcon>
             <ListItemText primary="Storage" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
-              <NavLink to='/Contact'>
+              <Link to='/Contact'>
                 <ContactMailIcon />
-              </NavLink>
+              </Link>
             </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItem>

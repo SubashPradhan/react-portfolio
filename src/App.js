@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Background from './Components/Home/Background';
 import Portfolio from './Components/Portfolio'
+import { Route } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -22,9 +23,9 @@ class App extends Component {
       <Navigator />
       <Background />
       <Slider {...settings}>
-        <Home />
-        <Portfolio />
-        <About />
+        <Route to='/' component={Home} />
+        <Route to='/Portfolio' component={Portfolio} />
+        <Route to='/About' component={About} />
       </Slider>
     </div>
   }
