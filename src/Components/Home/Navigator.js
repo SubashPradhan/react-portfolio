@@ -19,7 +19,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
-
+import { NavLink } from 'react-router-dom'
 
 const drawerWidth = 240;
 
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
   },
   appBar: {
-     zIndex: theme.zIndex.drawer + 1,
+    zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -88,6 +88,10 @@ export default function MiniDrawer() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const port = (e) => {
+    e.preventDefault()
+    
+  }
 
   function handleDrawerOpen() {
     setOpen(true);
@@ -121,7 +125,7 @@ export default function MiniDrawer() {
 
           <Typography variant="h5" noWrap >
             Subash Pradhan
-          </Typography>    
+          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -147,25 +151,33 @@ export default function MiniDrawer() {
         <List component="nav">
           <ListItem button>
             <ListItemIcon>
+              <NavLink to='/'>
               <HomeIcon />
+              </NavLink>
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
           <ListItem button>
-            <ListItemIcon>
-              <StorageRoundedIcon />
+            <ListItemIcon >
+              {/* <NavLink to='/Portfolio'> */}
+                <StorageRoundedIcon onClick={port} />
+              {/* </NavLink> */}
             </ListItemIcon>
             <ListItemText primary="Storage" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
-              <ContactMailIcon />
+              <NavLink to='/Contact'>
+                <ContactMailIcon />
+              </NavLink>
             </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
-              <InfoTwoToneIcon />
+              <NavLink to='/About'>
+                <InfoTwoToneIcon />
+              </NavLink>
             </ListItemIcon>
             <ListItemText primary="About Me" />
           </ListItem>
