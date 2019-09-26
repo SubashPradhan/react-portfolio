@@ -88,7 +88,7 @@ export default function MiniDrawer() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  
+
   function handleDrawerOpen() {
     setOpen(true);
   }
@@ -145,38 +145,38 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List component="nav">
-          <ListItem button>
-            <ListItemIcon>
-              <NavLink to='/'>
-              <HomeIcon />
-              </NavLink>
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon >
-              <NavLink to='/Portfolio'>
+          <NavLink to='/'>
+            <ListItem button>
+              <ListItemIcon>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItem>
+          </NavLink>
+          <NavLink to='/Portfolio'>
+            <ListItem button>
+              <ListItemIcon >
                 <StorageRoundedIcon />
-              </NavLink>
-            </ListItemIcon>
-            <ListItemText primary="Storage" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon>
-              <NavLink to='/Contact'>
+              </ListItemIcon>
+              <ListItemText primary="Storage" />
+            </ListItem>
+          </NavLink>
+          <NavLink to='/Portfolio'>
+            <ListItem button>
+              <ListItemIcon>
                 <ContactMailIcon />
-              </NavLink>
-            </ListItemIcon>
-            <ListItemText primary="Contact" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon>
-              <NavLink to='/About'>
+              </ListItemIcon>
+              <ListItemText primary="Contact" />
+            </ListItem>
+          </NavLink>
+          <NavLink to='/About'>
+            <ListItem button>
+              <ListItemIcon>
                 <InfoTwoToneIcon />
-              </NavLink>
-            </ListItemIcon>
-            <ListItemText primary="About Me" />
-          </ListItem>
+              </ListItemIcon>
+              <ListItemText primary="About Me" />
+            </ListItem>
+          </NavLink>
         </List>
       </Drawer>
     </div>
