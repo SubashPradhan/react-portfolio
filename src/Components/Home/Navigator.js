@@ -5,8 +5,6 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -20,14 +18,16 @@ import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 import { NavLink } from 'react-router-dom'
+import '../Style/App.css'
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
+    display: 'flex'
   },
   appBar: {
+    background: '#c5aa6a',
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -54,6 +54,9 @@ const useStyles = makeStyles(theme => ({
     whiteSpace: 'nowrap',
   },
   drawerOpen: {
+    background: '#363838',
+    opacity:0.8,
+    zIndex: 1,
     width: drawerWidth,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
@@ -61,6 +64,7 @@ const useStyles = makeStyles(theme => ({
     }),
   },
   drawerClose: {
+    background: '#0e101c',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -82,6 +86,11 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
+  iconHover: {
+    '&:hover': {
+      color: 'yellow',
+    },
+  },
 }));
 
 export default function MiniDrawer() {
@@ -99,16 +108,15 @@ export default function MiniDrawer() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
       <AppBar
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
+          [classes.appBar]: open,
         })}
       >
-        <Toolbar >
+        <Toolbar>
           <IconButton
-            color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -118,13 +126,11 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-
-          <Typography variant="h5" noWrap >
-            Subash Pradhan
-          </Typography>
+          <h2>Subash Pradhan</h2>
         </Toolbar>
       </AppBar>
       <Drawer
+
         variant="permanent"
         className={clsx(classes.drawer, {
           [classes.drawerOpen]: open,
@@ -147,24 +153,24 @@ export default function MiniDrawer() {
         <List component="nav">
           <NavLink to='/'>
             <ListItem button>
-              <ListItemIcon>
-                <HomeIcon />
+              <ListItemIcon >
+                <HomeIcon color='error' className={classes.iconHover}/>
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Home"/>
             </ListItem>
           </NavLink>
           <NavLink to='/Portfolio'>
             <ListItem button>
-              <ListItemIcon >
-                <StorageRoundedIcon />
+              <ListItemIcon>
+                <StorageRoundedIcon color='error' className={classes.iconHover}/>
               </ListItemIcon>
               <ListItemText primary="Storage" />
             </ListItem>
           </NavLink>
-          <NavLink to='/Portfolio'>
+          <NavLink to='/Contact'>
             <ListItem button>
               <ListItemIcon>
-                <ContactMailIcon />
+                <ContactMailIcon color='error' className={classes.iconHover}/>
               </ListItemIcon>
               <ListItemText primary="Contact" />
             </ListItem>
@@ -172,7 +178,7 @@ export default function MiniDrawer() {
           <NavLink to='/About'>
             <ListItem button>
               <ListItemIcon>
-                <InfoTwoToneIcon />
+                <InfoTwoToneIcon color='error' className={classes.iconHover}/>
               </ListItemIcon>
               <ListItemText primary="About Me" />
             </ListItem>

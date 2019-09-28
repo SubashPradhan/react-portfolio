@@ -9,6 +9,7 @@
     "react-animations": "^1.0.0",
     "react-dom": "^16.9.0",
     "react-grid-gallery": "^0.5.5",
+    "react-hook-form": "^3.23.12",
     "react-reveal": "^1.2.2",
     "react-router": "^5.1.0",
     "react-router-dom": "^5.1.0",
