@@ -4,8 +4,9 @@
 }
 
 .icons{
-  margin-left: 45px;
+  margin: 45px;
   border-radius: 50%;
+  background-color: pink;
   
 }
 .icons:hover{
