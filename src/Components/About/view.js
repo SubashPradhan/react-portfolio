@@ -1,62 +1,126 @@
 import React from 'react'
 import Tada from 'react-reveal/Tada';
-import Reveal from 'react-reveal/Reveal';
 import '../Style/About.css'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import CastForEducationIcon from '@material-ui/icons/CastForEducation';
+import WorkIcon from '@material-ui/icons/Work';
+import HotelIcon from '@material-ui/icons/Hotel';
+import EuroIcon from '@material-ui/icons/Euro';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 
-export default function () {
-
+export default function View(){ 
   return <div className='about-me-container'>
-    <Tada>
-      <h1>About me</h1>
-    </Tada>
+  <Tada>
+    <h1>About me</h1>
+  </Tada>
 
-    <Reveal effect='fadeInUp'>
-      <div className='about-me'>
-        Greetings, Subash Pradhan 29 originally from Nepal
-        and currently living with in Haarlem, Netherlands.
-        A recent graduate from Codaisseur
-        seeking my next opportunities to
-        develop my career in Web Development and add
-        value to the project that I am
-        lucky enough to join. As mentioned,
-        I am Originally came Netherlands to achieve
-        Automotive Engineering as Bachelors
-        before finding my true passion.
-        Involving myself in small projects with web design,
-        I was impressed immediately infatuated with the way coding
-        worked. As my infatuation grew in Web designing and wanting to
-        know more about developing websites along with coding,
-        I landed on NYCDA (New York Code & Design Academy) to
-        learn basic of web Development.
-        After initially completing the course incredibly
-        successful achieving web development basics,
-        I got ill with TB which rendered my house bound for nearly
-        6 months. As you can imagine this was a major setback for me
-        professionally and personally as I am also a
-        keen athlete regularly pushing myself to extremes including
-        Gurkha academy, British army and foreign legion special
-        forces training which covered numerous years. Once
-        recovered however health wise and financially I decided
-        to join Bootcamp at Codaisseur to continue my
-        career path in development where I was
-        able to craft my skills on advance new technologies as HTML5,
-        CSS3, JavaScript, React, Redux, Vue, Vuetify, SQL, Node.js,
-        Express.js, PostgreSQL, Docker, Heroku, GraphQl, Typescript,
-        Git, Github and more innovative technologies to make myself as a
-        Full Stack Developer.
-        Evidently, I am an enthusiastic, determined,
-        consciousness, motivated developer
-        who is adaptable, compatible and lives for new challenges.
-        I make it my mission to keep up to date with modern technologies
-        and be aware of cutting-edge innovations which I feel
-        is where the value comes in. You can definitely consider me as
-        a key team player who is always resourceful and is focused to
-        add value on every project. Hard work and determination have always been
-        my key to success and I hope to be able to bring this to
-        those I am able to work with.
-  </div>
-    </Reveal>
-    
-  </div>
+<VerticalTimeline>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="2018 - present"
+    iconStyle={{ background: '#cf993c', color: '#fff' }}
+    icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Social Media Evaluator</h3>
+    <h4 className="vertical-timeline-element-subtitle">Remote(part - time)</h4>
+    <p>
+      Giving feedbacks on Social Media Feeds to make internet a safe place.
+    </p>
+  </VerticalTimelineElement>
 
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="2019 - 2019"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<CastForEducationIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Codaisseur</h3>
+    <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
+    <p>
+      11 weeks of intense bootcamp to gain Full Stack Development Skills.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="2017 - 2018"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<HotelIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Diagnosed with Tuberclosis</h3>
+    <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
+    <p>
+      Sadly, got Diagnosed with Tuberclosis which was a major setback
+      for my professional and personal Career.
+    </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="2016 - 2017"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<CastForEducationIcon/>}
+  >
+    <h3 className="vertical-timeline-element-title">NYCDA(New York Code & Design Academy</h3>
+    <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
+    <p>
+      Being intrested in Web Development as I was Setting up myself in Amsterdam
+      joined NYCDA part-time(i.e 10 hrs/ week) course to gain basic knowledge of 
+      Web Development.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="2015 - 2016"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<EuroIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Moved To Amsterdam</h3>
+    <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
+    <p>
+      After struggling financially in Arnhem, Netherlands not 
+      being able to find jobs as a english speaker, I just had to move 
+      Amsterdam to support myself. Worked in Wagamama as a teamleader for a while. 
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="August 2013"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<FlightTakeoffIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Welcome Myself in Netherlands</h3>
+    <h4 className="vertical-timeline-element-subtitle">Arnhem, Netherlands</h4>
+    <p>
+      Came to Netherlands for my Automotive Engineering Bachelors
+      Completed 1 year of school successfully.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="2010 - 2013"
+    iconStyle={{ background: 'green', color: '#fff' }}
+    icon={<LaptopMacIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Technical Officer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Kathmandu, Nepal</h4>
+    <p>
+      Worked for Software Sytems Nepal as Technical Officer for POS(Point Of Sales) system.
+      As Internet was not entirely fast that time had to reach clients personally
+      to fix the bugs and error on Software on the spot. Helped the company to grow 
+      it's revenue almost 2 times more within a year.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    iconStyle={{ background: 'red' }}
+    // icon={<StarIcon />}
+  />
+</VerticalTimeline>
+</div>
 }
