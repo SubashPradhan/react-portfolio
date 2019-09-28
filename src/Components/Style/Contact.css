@@ -115,8 +115,8 @@ button {
   border-radius: 4px;
 }
 
-@media only screen and (max-width:700px){
+/* @media only screen and (max-width:700px){
   form{
     margin-left: 60px;
   }
-}
+} */
