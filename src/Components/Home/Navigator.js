@@ -20,7 +20,7 @@ import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 import { NavLink } from 'react-router-dom'
 import '../Style/App.css'
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerOpen: {
     background: '#363838',
-    opacity:0.8,
+    opacity: 0.8,
     zIndex: 1,
     width: drawerWidth,
     transition: theme.transitions.create('width', {
@@ -65,6 +65,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerClose: {
     background: '#0e101c',
+    zIndex: 1,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -87,8 +88,9 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3),
   },
   iconHover: {
+    color: '#c5aa6a',
     '&:hover': {
-      color: 'yellow',
+      color: 'red',
     },
   },
 }));
@@ -154,33 +156,33 @@ export default function MiniDrawer() {
           <NavLink to='/'>
             <ListItem button>
               <ListItemIcon >
-                <HomeIcon color='error' className={classes.iconHover}/>
+                <HomeIcon color='error' className={classes.iconHover} />
               </ListItemIcon>
-              <ListItemText primary="Home"/>
+              <ListItemText primary="Home" />
             </ListItem>
           </NavLink>
           <NavLink to='/Portfolio'>
             <ListItem button>
               <ListItemIcon>
-                <StorageRoundedIcon color='error' className={classes.iconHover}/>
+                <StorageRoundedIcon className={classes.iconHover} />
               </ListItemIcon>
               <ListItemText primary="Storage" />
-            </ListItem>
-          </NavLink>
-          <NavLink to='/Contact'>
-            <ListItem button>
-              <ListItemIcon>
-                <ContactMailIcon color='error' className={classes.iconHover}/>
-              </ListItemIcon>
-              <ListItemText primary="Contact" />
             </ListItem>
           </NavLink>
           <NavLink to='/About'>
             <ListItem button>
               <ListItemIcon>
-                <InfoTwoToneIcon color='error' className={classes.iconHover}/>
+                <ContactMailIcon className={classes.iconHover} />
               </ListItemIcon>
-              <ListItemText primary="About Me" />
+              <ListItemText primary="About" />
+            </ListItem>
+          </NavLink>
+          <NavLink to='/Contact'>
+            <ListItem button>
+              <ListItemIcon>
+                <InfoTwoToneIcon className={classes.iconHover} />
+              </ListItemIcon>
+              <ListItemText primary="Contact" />
             </ListItem>
           </NavLink>
         </List>

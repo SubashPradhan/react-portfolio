@@ -1,0 +1,15 @@
+.social-icon-container{
+  text-align: center;
+  margin-top: 50px; 
+}
+
+.icons{
+  margin-left: 45px;
+  border-radius: 50%;
+  
+}
+.icons:hover{
+  background-color: yellow;
+}
+
+  
