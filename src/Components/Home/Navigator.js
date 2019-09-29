@@ -87,7 +87,7 @@ export default function MiniDrawer() {
             <ListItemIcon >
               <HomeIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText primary="Home" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 
@@ -96,7 +96,7 @@ export default function MiniDrawer() {
             <ListItemIcon>
               <ContactMailIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="About" />
+            <ListItemText primary="About" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 
@@ -105,7 +105,7 @@ export default function MiniDrawer() {
             <ListItemIcon>
               <StorageRoundedIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="Portfoilio" />
+            <ListItemText primary="Portfoilio" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 
@@ -114,7 +114,7 @@ export default function MiniDrawer() {
             <ListItemIcon>
               <VisibilityIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="Skills" />
+            <ListItemText primary="Skills" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 
@@ -123,7 +123,7 @@ export default function MiniDrawer() {
             <ListItemIcon>
               <InfoTwoToneIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="Contact" />
+            <ListItemText primary="Contact" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 

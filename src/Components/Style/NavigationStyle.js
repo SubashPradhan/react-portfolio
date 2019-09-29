@@ -71,5 +71,8 @@ export const useStyles = makeStyles(theme => ({
       color: 'red',
     },
   },
+  textColor:{
+    color: '#fff'
+  }
 }));
 

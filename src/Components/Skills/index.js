@@ -3,46 +3,46 @@ import View from './view'
 
 const SKILLS = [
   {
-    "type": "HTML",
+    "type": "HTML5",
     "level": 95,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "CSS",
+    "type": "CSS3",
     "level": 90,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "Javascript",
+    "type": "JAVASCRIPT",
     "level": 90,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "Jquery",
+    "type": "JQUERY",
     "level": 75,
   },
   {
-    "type": "React",
-    "level": 80,
+    "type": "REACT",
+    "level": 87,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "Redux",
+    "type": "REDUX",
     "level": 70,
     color: {
       "bar": "yelow"
     }
   },
   {
-    "type": "Vue",
+    "type": "VUE",
     "level": 80,
     color: {
       "bar": "green"
@@ -53,31 +53,54 @@ const SKILLS = [
     "level": 60
   },
   {
-    "type": "Express",
+    "type": "EXPRESS",
     "level": 80,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "Sequelize",
-    "level": 70,
+    "type": "SEQUELIZE",
+    "level": 85,
+    color: {
+      "bar": "green "
+    }
   },
   {
-    "type": "Frontend",
+    "type": "NODE.JS",
+    "level": 75
+  },
+  {
+    "type": "GRAPHQL",
+    "level": 60
+  },
+  {
+    "type": "TYPESCRIPT",
+    "level": 60
+  },
+  {
+    "type": "WEBPACKS",
+    "level": 80,
+    color : {
+      "bar": "green"
+    }
+  },
+  {
+    "type": "FRONTEND",
     "level": 85,
     color: {
       "bar": "green"
     }
   },
   {
-    "type": "Backend",
+    "type": "BACKEND",
     "level": 80,
     color: {
       "bar": "green"
     }
   }
 ]
+
 const colors = {
   "title": {
     "background": "#7026b5"
