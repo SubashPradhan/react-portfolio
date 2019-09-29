@@ -19,7 +19,6 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 import { NavLink } from 'react-router-dom'
 import '../Style/App.css'
-import { NONAME } from 'dns';
 
 const drawerWidth = 200;
 
