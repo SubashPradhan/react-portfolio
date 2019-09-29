@@ -4,7 +4,7 @@ import View from './view'
 const SKILLS = [
   {
     "type": "HTML",
-    "level": 100,
+    "level": 95,
     color:{
       "bar": "green"
     }
