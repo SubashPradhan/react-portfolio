@@ -4,8 +4,7 @@ import View from './view'
 class Home extends Component {
   
   render() {
-    return <View />
-      
+    return <View />  
   }
 }
 
