@@ -37,6 +37,6 @@ class Background extends Component {
     </div>
   }
 }
-// }
+
 
 export default Background

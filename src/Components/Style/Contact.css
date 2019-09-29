@@ -24,21 +24,21 @@ input, .textfield {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  /* min-width: auto; */
   border-radius: 4px;
   border: 1px solid white;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
+  background: #a7d9b4
 }
 
 label {
-  line-height: 0.5;
+  line-height: 0.8;
   text-align: left;
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: white;
+  color: yellow;
   font-size: 20px;
   font-weight: 900;
 }
@@ -115,8 +115,13 @@ button {
   border-radius: 4px;
 }
 
-/* @media only screen and (max-width:700px){
-  form{
-    margin-left: 60px;
+@media only screen and (max-width:700px){
+  input, .textfield{
+    width: 75%;
   }
-} */
+
+  label{
+    text-align: center;
+    line-height: 1;
+  }
+} 

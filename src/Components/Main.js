@@ -13,10 +13,10 @@ class Main extends Component {
     return <div>
       <SwipeableRoutes dots={true}>
         <Route exact path='/' component={Home} />
-        <Route path='/Portfolio' component={Portfolio} />
         <Route path='/About' component={About} />
-        <Route path='/Contact' component={Contact} />
+        <Route path='/Portfolio' component={Portfolio} />
         <Route path='/Skills' component={Skills} />
+        <Route path='/Contact' component={Contact} />
        </SwipeableRoutes>
     </div>
   }

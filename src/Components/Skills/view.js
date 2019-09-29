@@ -5,12 +5,16 @@ import Tada from 'react-reveal/Tada';
 
 export default function View(props) {
   const { skills, colors } = props
-  return <div>
+  return <div align='center'>
     <Tada>
       <h1>Skills</h1>
     </Tada>
-    <div className='skills'>
-      < SkillBar skills={skills} colors={colors} animationDuration={2000} />
+    <div className='skills' align='center'>
+      < SkillBar 
+      skills={skills} 
+      colors={colors} 
+      animationDuration={2000}
+      />
     </div>
   </div>
 }

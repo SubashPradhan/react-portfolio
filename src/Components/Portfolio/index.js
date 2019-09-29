@@ -8,8 +8,8 @@ const IMAGES =
     thumbnailWidth: 700,
     thumbnailHeight: 250,
     tags: [{ value: "Movie-app", title: "Movie-app" }],
-    caption: "Simple movie- search app for two days Hackathon at Codaisseur.HACKATHON-PROJECT - Vue CLI, Vuetify, Axios "
-    
+    caption: "Simple movie-search app for two days Hackathon at Codaisseur. Hackathon project - Vue CLI, Vuetify, Axios "
+
   },
   {
     src: require('../images/gitgud.gif'),
@@ -17,7 +17,7 @@ const IMAGES =
     thumbnailWidth: 700,
     thumbnailHeight: 250,
     tags: [{ value: "Git-gud", title: "Git-gud" }],
-    caption: "A validator of your GitHub profile and Git use, designed to provide feedback for job seekers and graduated students.REAL WORLD PROJECT - GraphQl, React-Apollo, Face-api"
+    caption: "A validator of your GitHub profile and Git use, designed to provide feedback for job seekers and graduated students.Real Wrold Project- GraphQl, React-Apollo, Face-api"
   },
 
   {
@@ -26,8 +26,8 @@ const IMAGES =
     thumbnailWidth: 600,
     thumbnailHeight: 250,
     tags: [{ value: "First-fullstack-app", title: "FullStack" }],
-    caption: "My Very first FullStack App. GROUP PROJECT - Sequelize, Express, React, Redux, Rest-Api "
-    
+    caption: "My Very first FullStack App. Group Project - Sequelize, Express, React, Redux, Rest-Api "
+
   },
   {
     src: require('../images/hangman.gif'),
@@ -35,7 +35,7 @@ const IMAGES =
     thumbnailWidth: 600,
     thumbnailHeight: 250,
     tags: [{ value: "Hangaman-game", title: "Hangaman" }],
-    caption: "A fullstack Hangman game with logins.GROUP-PROJECT - Express, Sequelize, Bcrypt, Jsonwebtoken, React, Redux"
+    caption: "A fullstack Hangman game with logins.Group Project - Express, Sequelize, Bcrypt, Jsonwebtoken, React, Redux"
   },
   {
     src: require('../images/html-portfolio.gif'),
@@ -44,8 +44,7 @@ const IMAGES =
     thumbnailHeight: 250,
     tags: [{ value: "Plain-HTML-Portfolio", title: "First-PortFolio" }],
     caption: "My very first portfolio using plain HTML, CSS, Javascript, Jquery."
-  }
-]
+  }]
 
 class Portfolio extends Component {
   render() {

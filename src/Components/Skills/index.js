@@ -5,21 +5,21 @@ const SKILLS = [
   {
     "type": "HTML",
     "level": 95,
-    color:{
+    color: {
       "bar": "green"
     }
   },
   {
     "type": "CSS",
     "level": 90,
-    color:{
+    color: {
       "bar": "green"
     }
   },
   {
     "type": "Javascript",
     "level": 90,
-    color:{
+    color: {
       "bar": "green"
     }
   },
@@ -30,21 +30,21 @@ const SKILLS = [
   {
     "type": "React",
     "level": 80,
-    color:{
+    color: {
       "bar": "green"
     }
   },
   {
     "type": "Redux",
     "level": 70,
-    color:{
+    color: {
       "bar": "yelow"
     }
   },
   {
     "type": "Vue",
     "level": 80,
-    color:{
+    color: {
       "bar": "green"
     }
   },
@@ -55,8 +55,8 @@ const SKILLS = [
   {
     "type": "Express",
     "level": 80,
-    color:{
-      "bar" : "green"
+    color: {
+      "bar": "green"
     }
   },
   {
@@ -66,23 +66,21 @@ const SKILLS = [
   {
     "type": "Frontend",
     "level": 85,
-    color:{
+    color: {
       "bar": "green"
     }
   },
   {
     "type": "Backend",
     "level": 80,
-    color:{
+    color: {
       "bar": "green"
     }
   }
 ]
 const colors = {
-  // "bar": "black",
   "title": {
-    "text": "#fff",
-    "background": "#3d4747"
+    "background": "#7026b5"
   }
 }
 

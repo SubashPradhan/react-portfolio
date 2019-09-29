@@ -60,6 +60,7 @@ export default function MiniDrawer() {
         </Toolbar>
       </AppBar>
     </ClickAwayListener>
+
     <Drawer
       variant="permanent"
       className={clsx(classes.drawer, {
@@ -84,19 +85,12 @@ export default function MiniDrawer() {
         <NavLink to='/'>
           <ListItem button>
             <ListItemIcon >
-              <HomeIcon color='error' className={classes.iconHover} />
+              <HomeIcon className={classes.iconHover} />
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
         </NavLink>
-        <NavLink to='/Portfolio'>
-          <ListItem button>
-            <ListItemIcon>
-              <StorageRoundedIcon className={classes.iconHover} />
-            </ListItemIcon>
-            <ListItemText primary="Storage" />
-          </ListItem>
-        </NavLink>
+
         <NavLink to='/About'>
           <ListItem button>
             <ListItemIcon>
@@ -105,6 +99,16 @@ export default function MiniDrawer() {
             <ListItemText primary="About" />
           </ListItem>
         </NavLink>
+
+        <NavLink to='/Portfolio'>
+          <ListItem button>
+            <ListItemIcon>
+              <StorageRoundedIcon className={classes.iconHover} />
+            </ListItemIcon>
+            <ListItemText primary="Portfoilio" />
+          </ListItem>
+        </NavLink>
+
         <NavLink to='/Skills'>
           <ListItem button>
             <ListItemIcon>
@@ -113,6 +117,7 @@ export default function MiniDrawer() {
             <ListItemText primary="Skills" />
           </ListItem>
         </NavLink>
+
         <NavLink to='/Contact'>
           <ListItem button>
             <ListItemIcon>
@@ -121,6 +126,7 @@ export default function MiniDrawer() {
             <ListItemText primary="Contact" />
           </ListItem>
         </NavLink>
+
       </List>
     </Drawer>
   </div>
