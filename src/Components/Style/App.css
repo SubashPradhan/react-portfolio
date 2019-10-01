@@ -9,7 +9,7 @@ h2{
 
 span{
   font-family: 'Yatra One';
-  color: 'yellowgreen';
+  color: white;
 }
 
 .footer{
@@ -26,5 +26,11 @@ span{
   font-weight: bold;
   opacity: 0.9;
   z-index: 2;
+}
+
+@media only screen and (max-width:900px){
+  span{
+    color: black;
+  }
 }
 
