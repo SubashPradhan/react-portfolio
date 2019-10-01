@@ -43,7 +43,7 @@ export default function View() {
     </p>
       </VerticalTimelineElement>
 
-      <VerticalTimelineElement style={{color: 'yellow'}}
+      <VerticalTimelineElement 
         className="vertical-timeline-element--work"
         date="2017 - 2018" 
         iconStyle={{ background: 'green', color: '#fff' }}
