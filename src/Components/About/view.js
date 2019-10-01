@@ -49,13 +49,14 @@ export default function View() {
         iconStyle={{ background: 'green', color: '#fff' }}
         icon={<HotelIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Diagnosed with Tuberculosis</h3>
+        <h3 className="vertical-timeline-element-title">Diagnosed with Tuberculosis / Moved To Haarlem, Netherlands</h3>
         <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
         <p>
           Sadly, got Diagnosed with Tuberculosis
           lead me to rest home for almost 5 months
           and Isolated, which was a major setback
           for my professional and personal Career.
+          Also Moved to Haarlem for better Housing.
     </p>
       </VerticalTimelineElement>
 
