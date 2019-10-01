@@ -43,9 +43,9 @@ export default function View() {
     </p>
       </VerticalTimelineElement>
 
-      <VerticalTimelineElement
+      <VerticalTimelineElement style={{color: 'yellow'}}
         className="vertical-timeline-element--work"
-        date="2017 - 2018"
+        date="2017 - 2018" 
         iconStyle={{ background: 'green', color: '#fff' }}
         icon={<HotelIcon />}
       >
