@@ -86,6 +86,20 @@ const SKILLS = [
     }
   },
   {
+    "type": "GIT",
+    "level": 85,
+    color: {
+      "bar": "green"
+    }
+  },
+  {
+    "type": "GITHUB",
+    "level": 85,
+    color: {
+      "bar": "green"
+    }
+  },
+  {
     "type": "FRONTEND",
     "level": 85,
     color: {

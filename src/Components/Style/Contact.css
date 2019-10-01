@@ -38,7 +38,7 @@ label {
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: yellow;
+  color: white;
   font-size: 20px;
   font-weight: 900;
 }
@@ -113,6 +113,12 @@ button {
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 4px;
+}
+
+.error-msg{
+  color: greenyellow;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 23px;
 }
 
 @media only screen and (max-width:700px){

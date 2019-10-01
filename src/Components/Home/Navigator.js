@@ -105,7 +105,7 @@ export default function MiniDrawer() {
             <ListItemIcon>
               <StorageRoundedIcon className={classes.iconHover} />
             </ListItemIcon>
-            <ListItemText primary="Portfoilio" className={classes.textColor}/>
+            <ListItemText primary="Portfolio" className={classes.textColor}/>
           </ListItem>
         </NavLink>
 

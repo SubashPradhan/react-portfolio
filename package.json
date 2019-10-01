@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@material-ui/core": "^4.4.2",
     "@material-ui/icons": "^4.4.1",
@@ -18,7 +19,8 @@
     "react-sky": "^1.1.0",
     "react-swipeable-routes": "^0.6.0",
     "react-typist": "^2.0.5",
-    "react-vertical-timeline-component": "^2.5.0"
+    "react-vertical-timeline-component": "^2.5.0",
+    "superagent": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

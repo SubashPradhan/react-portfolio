@@ -1,12 +1,35 @@
 import React, { Component } from 'react'
 import View from './view'
 import Social from './social-share'
+import * as request from 'superagent'
 
 class Contact extends Component {
+  state = {
+    name: '',
+    error: false
+  }
+
+  onSubmit = async (data, e) => {
+    e.preventDefault()
+    const response = await request
+      .post('https://desolate-eyrie-81399.herokuapp.com/mail')
+      .send({ data })
+
+    if (response.statusCode === 200) {
+      await this.setState({
+        error: true,
+        name: data.name
+      })
+    }
+  }
+
   render() {
-    const onSubmit = data => { console.log(data) }
     return <div>
-      <View onSubmit={onSubmit} />
+      <View
+        onSubmit={this.onSubmit}
+        error={this.state.error}
+        name={this.state.name}
+      />
       <Social />
     </div>
   }
