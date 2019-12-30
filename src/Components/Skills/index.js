@@ -4,7 +4,7 @@ import View from './view'
 const SKILLS = [
   {
     "type": "HTML5",
-    "level": 95,
+    "level": 90,
     color: {
       "bar": "green"
     }
@@ -24,8 +24,15 @@ const SKILLS = [
     }
   },
   {
+    "type": "PYTHON",
+    "level": 70,
+    color : {
+      "bar": "green"
+    }
+  },
+  {
     "type": "JQUERY",
-    "level": 75,
+    "level": 80,
   },
   {
     "type": "REACT",
@@ -53,22 +60,8 @@ const SKILLS = [
     "level": 60
   },
   {
-    "type": "EXPRESS",
-    "level": 80,
-    color: {
-      "bar": "green"
-    }
-  },
-  {
-    "type": "SEQUELIZE",
-    "level": 85,
-    color: {
-      "bar": "green "
-    }
-  },
-  {
-    "type": "NODE.JS",
-    "level": 75
+    "type": "NODEJS",
+    "level": 80
   },
   {
     "type": "GRAPHQL",

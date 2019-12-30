@@ -26,7 +26,7 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">Social Media Evaluator(APPEN)</h3>
         <h4 className="vertical-timeline-element-subtitle">Remote(part-time)</h4>
         <p>
-          Giving feedbacks on Social Media Feeds to make internet a safe place.
+        A project-based company, where we evaluate web pages and social contents to make the internet a safe place.
         </p>
       </VerticalTimelineElement>
 
@@ -39,13 +39,20 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">Codaisseur</h3>
         <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
         <p>
-          11 weeks of intense bootcamp to gain Full Stack Development Skills.
+          11 weeks of intense Bootcamp where we learn by doing.
+          Worked in a team using agile-scrum methodologies to implement
+          new features in real-world projects from Codaisseur.
+          We use CI/CD pipelines using version control tools like Git.
+          We learned to work with React, Redux, Express.js, (Node (incl. ES6),
+          GraphQL, REST and more. More importantly, I learned to make full-stack
+          apps with different new technologies which are deployed on a platform 
+          like Netlify, Heroku..
     </p>
       </VerticalTimelineElement>
 
-      <VerticalTimelineElement 
+      <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2017 - 2018" 
+        date="2017 - 2018"
         iconStyle={{ background: 'green', color: '#fff' }}
         icon={<HotelIcon />}
       >
@@ -69,9 +76,10 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">NYCDA(New York Code & Design Academy)</h3>
         <h4 className="vertical-timeline-element-subtitle">Amsterdam, Netherlands</h4>
         <p>
-          Being intrested in Web Development as I was Setting up myself in Amsterdam
-          joined NYCDA part-time(i.e 10 hrs/ week) course to gain basic knowledge of
-          Web Development.
+          Being intrested in Web Development, as I was setting up myself in Amsterdam,
+          to pursue my passion in web development and to taste coding I joined NYCDA
+          that was 96 hours of course for HTML, CSS, JS including bootstrap, SAAS.
+          This is where I started my journey for web development.
     </p>
       </VerticalTimelineElement>
 
@@ -113,10 +121,11 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">Technical Officer(SSN)</h3>
         <h4 className="vertical-timeline-element-subtitle">Kathmandu, Nepal</h4>
         <p>
-          Worked for Software Sytems Nepal as Technical Officer for POS(Point Of Sales) system.
-          As Internet was not entirely fast that time had to reach clients personally
-          to fix the bugs and error on Software on the spot. Helped the company to grow
-          it's revenue almost 2 times more within a year.
+        With my passion for computers and the internet soon after my college,
+        I joined Software Systems Nepal, an Accounting software company where 
+        I supported end-users problems regarding software bugs using SQL queries 
+        and build customer retention rates with the best services.
+        Helped the company to grow it's revenue almost 2 times more within a year.
     </p>
       </VerticalTimelineElement>
 
