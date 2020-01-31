@@ -15,15 +15,15 @@ class Contact extends Component {
       .post('https://desolate-eyrie-81399.herokuapp.com/mail')
       .send({ data })
 
-    if (response.statusCode === 200) {
-      try {
+    try {
+      if (response.statusCode === 200) {
         await this.setState({
           error: true,
           name: data.name
-        }) 
-      } catch (error) {
-        console.error(error)
+        })
       }
+    } catch (error) {
+      console.error(error)
     }
   }
 
