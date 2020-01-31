@@ -16,10 +16,14 @@ class Contact extends Component {
       .send({ data })
 
     if (response.statusCode === 200) {
-      await this.setState({
-        error: true,
-        name: data.name
-      })
+      try {
+        await this.setState({
+          error: true,
+          name: data.name
+        }) 
+      } catch (error) {
+        console.error(error)
+      }
     }
   }
 
