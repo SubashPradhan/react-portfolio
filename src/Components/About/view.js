@@ -26,7 +26,11 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">Social Media Evaluator(APPEN)</h3>
         <h4 className="vertical-timeline-element-subtitle">Remote(part-time)</h4>
         <p>
-        A project-based company, where we evaluate web pages and social contents to make the internet a safe place.
+          A project-based company, where we evaluate web pages and social media feeds
+          so we can better understand the News Feed ecosystem and work to improve the
+          News Feed experience for everyone. Also feeding data for research and device
+          training purposes to develop next-generation AI technologies. 
+          Working with 80% of accuracy rate consistently is most.
         </p>
       </VerticalTimelineElement>
 
@@ -45,7 +49,7 @@ export default function View() {
           We use CI/CD pipelines using version control tools like Git.
           We learned to work with React, Redux, Express.js, (Node (incl. ES6),
           GraphQL, REST and more. More importantly, I learned to make full-stack
-          apps with different new technologies which are deployed on a platform 
+          apps with different new technologies which are deployed on a platform
           like Netlify, Heroku..
     </p>
       </VerticalTimelineElement>
@@ -121,11 +125,11 @@ export default function View() {
         <h3 className="vertical-timeline-element-title">Technical Officer(SSN)</h3>
         <h4 className="vertical-timeline-element-subtitle">Kathmandu, Nepal</h4>
         <p>
-        With my passion for computers and the internet soon after my college,
-        I joined Software Systems Nepal, an Accounting software company where 
-        I supported end-users problems regarding software bugs using SQL queries 
-        and build customer retention rates with the best services.
-        Helped the company to grow it's revenue almost 2 times more within a year.
+          With my passion for computers and the internet soon after my college,
+          I joined Software Systems Nepal, an Accounting software company where
+          I supported end-users problems regarding software bugs using SQL queries
+          and build customer retention rates with the best services.
+          Helped the company to grow it's revenue almost 2 times more within a year.
     </p>
       </VerticalTimelineElement>
 
