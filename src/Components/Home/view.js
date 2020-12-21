@@ -1,19 +1,27 @@
-import React from 'react'
-import '../Style/Home.css'
-import Typist from 'react-typist'
-import Subash from '../images/subash.jpg'
+import React from 'react';
+import '../Style/Home.css';
+import Typist from 'react-typist';
+// import Subash from '../images/subash.jpg';
+import MySvg from '../assets/my-svg.svg';
 
 export default function View() {
-  return <div align='center'>
-    <img src={Subash} alt='Subash' className='my-picture' />
-    <Typist cursor={{show: false}}>
-      <div className='welcome-text'>
-        Name: Subash Pradhan<br />
-        A Full-Stack Developer<br />
-        Welcome, Nice To Meet You !!!
-   </div>
-    </Typist>
-  </div>
-
-
+	return (
+		<div className="home-container">
+			<img
+				src={MySvg}
+				alt="Subash"
+				className="home-img"
+				title="Subash Pradhan"
+			/>
+			<Typist cursor={{ show: false }}>
+				<div className="welcome-text">
+					Hi, I am Subash Pradhan.
+					<br />
+					- Web Developer.
+					<br />
+					Welcome & Nice To Meet You.
+				</div>
+			</Typist>
+		</div>
+	);
 }
