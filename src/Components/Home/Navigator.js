@@ -58,8 +58,13 @@ export default function MiniDrawer() {
 						>
 							<MenuIcon />
 						</IconButton>
-						<h2>Subash Pradhan</h2>
-						<img src={Subash} alt="Subash" className="my-picture" />
+						<h2 title="Subash Pradhan">Subash Pradhan</h2>
+						<img
+							src={Subash}
+							alt="Subash"
+							className="my-picture"
+							title="Subash Pradhan"
+						/>
 					</Toolbar>
 				</AppBar>
 			</ClickAwayListener>
