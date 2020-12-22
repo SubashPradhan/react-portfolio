@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Navigator from './Components/Home/Navigator';
+// import Navigator from './Components/Home/Navigator';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<Navigator />
+				<Navbar />
+				{/* <Navigator /> */}
 				<Main />
 				<Footer />
 			</div>

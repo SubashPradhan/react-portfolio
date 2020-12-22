@@ -1,0 +1,82 @@
+.navbar-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: rgba(48, 49, 56, 0.5);
+	transition: all 0.5s ease-in-out;
+	transform-style: preserve-3d;
+	z-index: 1;
+}
+
+.navbar-show {
+	transform: translateY(0);
+}
+
+.navbar-hide {
+	transform: translateY(-100%);
+}
+
+.navbar-links-contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.navbar-links {
+	font-family: 'Yatra One';
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+
+.navbar-links:hover {
+	transform: scale(1.3);
+}
+.menu-container {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.menu-container div {
+	height: 0.2rem;
+	margin: 0.5rem;
+	background-color: white;
+	transition: all 0.4s ease-in-out;
+}
+
+.burger-line-one {
+	width: 1rem;
+}
+
+.burger-line-two {
+	width: 1.5rem;
+}
+
+.burger-line-three {
+	width: 2.5rem;
+}
+
+.burger-line-one-clicked {
+	width: 2.5rem;
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-line-two-clicked {
+	width: 0;
+	opacity: 0;
+}
+
+.burger-line-three-clicked {
+	width: 2.5rem;
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.burger-line-one-clicked,
+.line-three-clicked {
+	background: rgb(214, 2, 2);
+}

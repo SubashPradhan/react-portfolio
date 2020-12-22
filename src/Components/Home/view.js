@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Style/Home.css';
 import Typist from 'react-typist';
-// import Subash from '../images/subash.jpg';
 import MySvg from '../assets/my-svg.svg';
 
 export default function View() {
