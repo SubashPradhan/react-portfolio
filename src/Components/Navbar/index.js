@@ -10,10 +10,6 @@ class Navbar extends Component {
 		};
 	}
 
-	componentDidMount() {
-		// document.body.addEventListener('click', this.handleClickOutside);
-	}
-
 	handleMenu() {
 		this.setState({
 			menuClicked: !this.state.menuClicked,

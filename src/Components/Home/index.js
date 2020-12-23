@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-import View from './view'
+import React, { Component } from 'react';
+import View from './view';
 
 class Home extends Component {
-  
-  render() {
-    return <View />  
-  }
+	render() {
+		return <View />;
+	}
 }
 
-export default Home
+export default Home;

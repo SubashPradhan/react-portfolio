@@ -14,15 +14,15 @@ export default function View() {
 					title="Subash Pradhan"
 				/>
 			</div>
-			<Typist cursor={{ show: false }}>
-				<div className="welcome-text">
+			<div className="welcome-text">
+				<Typist cursor={{ show: false }}>
 					Hi, I am Subash Pradhan.
 					<br />
 					- Web Developer.
 					<br />
 					Welcome & Nice To Meet You.
-				</div>
-			</Typist>
+				</Typist>
+			</div>
 		</div>
 	);
 }
