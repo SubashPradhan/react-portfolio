@@ -44,21 +44,26 @@
 .personal-social-profiles div {
 	margin: 2rem;
 	cursor: pointer;
+	border-radius: 50%;
 	transition: all 0.4s ease-in-out;
 }
+
 .personal-social-profiles div:hover {
 	transform: scale(1.4);
 }
 
 #linkedIn-icon {
-	color: blue;
+	color: rgb(1, 132, 255);
 }
+
 #instagram-icon {
 	color: red;
 }
+
 #github-icon {
-	color: black;
+	color: white;
 }
+
 .subash-img {
 	position: absolute;
 	top: 2rem;
@@ -66,6 +71,7 @@
 	height: 8rem;
 	width: 8rem;
 	border-radius: 50%;
+	cursor: pointer;
 	transition: 0.4s ease-in-out;
 }
 
@@ -115,9 +121,4 @@
 .burger-line-three-clicked {
 	width: 2.5rem;
 	transform: rotate(45deg);
-}
-
-.burger-line-one-clicked,
-.line-three-clicked {
-	background: rgb(214, 2, 2);
 }
