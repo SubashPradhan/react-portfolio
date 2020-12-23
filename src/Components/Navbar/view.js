@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Style/Navbar.css';
 
 export default function View(props) {
@@ -14,18 +13,18 @@ export default function View(props) {
 				}
 			>
 				<div className="navbar-links-contents">
-					<Link to="/home" className="navbar-links">
+					<a href="#home" className="navbar-links">
 						Home
-					</Link>
-					<Link to="/about" className="navbar-links">
+					</a>
+					<a href="#about" className="navbar-links">
 						About
-					</Link>
-					<Link to="/portfolio" className="navbar-links">
+					</a>
+					<a href="#portfolio" className="navbar-links">
 						Portfolio
-					</Link>
-					<Link to="/contact" className="navbar-links">
+					</a>
+					<a href="#contact" className="navbar-links">
 						Contact
-					</Link>
+					</a>
 				</div>
 			</div>
 			<div className="menu-container" onClick={() => handleMenu()}>
