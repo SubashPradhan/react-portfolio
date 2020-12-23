@@ -1,22 +1,18 @@
 .portfolio {
-  text-align: center;
-  margin-left: 80px; 
-  font-size: 25px;
+	text-align: center;
+	/* margin-left: 80px; */
+	font-size: 2rem;
 }
 
-h1{
-  font-family: 'Rock Salt', cursive;
-  color:#FFA500;
-  margin-top: 80px;
-  text-align: center; 
-  font-size: 40px;
-  font-style: oblique;
-  text-decoration: underline;
+h1 {
+	color: white;
+	margin: 1rem;
+	text-align: center;
+	font-size: 2.5rem;
 }
 
-@media only screen and (max-width:700px){
-  .portfolio{
-    margin-left: 0;
-  }
+@media only screen and (max-width: 700px) {
+	.portfolio {
+		margin-left: 0;
+	}
 }
-    
