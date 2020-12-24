@@ -1,0 +1,19 @@
+.random-letters-right span,
+.random-letters-left span {
+	font-size: 3rem;
+	color: green;
+	letter-spacing: 0.3rem;
+}
+#learn,
+#design {
+	transform: rotate(-45deg);
+}
+
+#create,
+#share {
+	transform: rotate(-60deg);
+}
+#grow,
+#code {
+	transform: rotate(30deg);
+}

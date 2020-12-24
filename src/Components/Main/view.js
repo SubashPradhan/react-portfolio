@@ -6,9 +6,7 @@ import Contact from '../Contact';
 import Skills from '../Skills';
 import '../Style/Main.css';
 
-export default function View(props) {
-	const { randomLettersRef } = props;
-
+export default function View() {
 	return (
 		<div className="main-container">
 			<section id="home">
@@ -26,15 +24,6 @@ export default function View(props) {
 			<section id="contact">
 				<Contact />
 			</section>
-			<div className="random-letters" ref={randomLettersRef}>
-				<span>&</span>
-				<span>%</span>
-				<span>{'{'}</span>
-				<span>{'['}</span>
-				<span>$</span>
-				<span>#</span>
-				<span>!</span>
-			</div>
 		</div>
 	);
 }
