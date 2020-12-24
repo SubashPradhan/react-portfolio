@@ -2,9 +2,13 @@ import React from 'react';
 import '../Style/Background.css';
 
 export default function View(props) {
-	const { randomLettersRefRight, randomLettersRefLeft } = props;
+	const {
+		randomLettersContainer,
+		randomLettersRefRight,
+		randomLettersRefLeft,
+	} = props;
 	return (
-		<div className="background-container">
+		<div ref={randomLettersContainer} className="background-container">
 			<div className="random-letters-left" ref={randomLettersRefLeft}>
 				<span id="code">{'{code}'}</span>
 				<span id="learn">{'{learn}'}</span>

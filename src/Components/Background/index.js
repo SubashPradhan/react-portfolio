@@ -4,37 +4,48 @@ import View from './view';
 class Background extends Component {
 	constructor(props) {
 		super(props);
+		this.randomLettersContainer = React.createRef();
 		this.randomLettersRefRight = React.createRef();
 		this.randomLettersRefLeft = React.createRef();
 	}
 
 	componentDidMount() {
 		const currentClientWidth = document.documentElement.clientWidth;
-		const childNodesRight = this.randomLettersRefRight.current.childNodes;
-		const arrayOfChildNodesRight = Array.from(childNodesRight);
 		const minWidthRight = currentClientWidth - 400;
 		const maxWidthRight = currentClientWidth - 20;
-		this.renderSymbols(arrayOfChildNodesRight, minWidthRight, maxWidthRight);
 
-		const childNodesLeft = this.randomLettersRefLeft.current.childNodes;
-		const arrayOfChildNodesLeft = Array.from(childNodesLeft);
 		const minWidthLeft = 10;
 		const maxWidthLeft = 200;
-		this.renderSymbols(arrayOfChildNodesLeft, minWidthLeft, maxWidthLeft);
+		this.renderSymbols(this.randomLettersRefLeft, minWidthRight, maxWidthRight);
+		this.renderSymbols(this.randomLettersRefRight, minWidthLeft, maxWidthLeft);
 
-		const allSymbols = arrayOfChildNodesRight.concat(arrayOfChildNodesLeft);
+		const arrayOfChildNodesLeft = Array.from(
+			this.randomLettersRefLeft.current.childNodes,
+		);
+		const arrayOfChildNodesRight = Array.from(
+			this.randomLettersRefRight.current.childNodes,
+		);
 		let startingDegreeRight = 0;
 		let startingDegreeLeft = -1;
+		let prevScrollY = window.pageYOffset;
 		window.addEventListener('scroll', function () {
-			console.log(window.scrollY);
+			console.log('prev', prevScrollY);
 			arrayOfChildNodesRight.forEach(symbol => {
-				symbol.style.transform = `rotate(${startingDegreeRight}deg)`;
-				startingDegreeRight += 0.2;
+				symbol.style.transform = `translateY(${startingDegreeRight}px) rotate(${startingDegreeRight}deg)`;
+				startingDegreeRight =
+					window.scrollY < prevScrollY
+						? startingDegreeRight + 0.15
+						: startingDegreeRight - 0.15;
 			});
 			arrayOfChildNodesLeft.forEach(symbol => {
-				symbol.style.transform = `rotate(${startingDegreeLeft}deg)`;
-				startingDegreeLeft -= 0.2;
+				symbol.style.transform = `translateY(${startingDegreeLeft}px) rotate(${startingDegreeRight}deg`;
+				startingDegreeLeft =
+					window.scrollY > prevScrollY
+						? startingDegreeLeft + 0.15
+						: startingDegreeLeft - 0.15;
 			});
+			prevScrollY = window.pageYOffset;
+			console.log(window.pageYOffset);
 		});
 	}
 
@@ -42,10 +53,11 @@ class Background extends Component {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
 
-	renderSymbols(referenceArray, minScreenSize, maxScreenSize) {
-		// Create symbols for right hand side
+	renderSymbols(reference, minScreenSize, maxScreenSize) {
+		const childNodes = reference.current.childNodes;
+		const arrayOfChildNodes = Array.from(childNodes);
 		const currentClientHeight = document.documentElement.clientHeight;
-		referenceArray.forEach(child => {
+		arrayOfChildNodes.forEach(child => {
 			const randomPositionHeight = this.getRandomNumber(0, currentClientHeight);
 			const randomPositionWidth = this.getRandomNumber(
 				minScreenSize,
@@ -57,6 +69,8 @@ class Background extends Component {
 			child.style.padding = '2rem';
 		});
 	}
+
+	// Check this later
 	handleScroll(childOne, childTwo) {
 		const combinedChildren = childOne.concat(childTwo);
 		console.log(combinedChildren);
@@ -65,6 +79,7 @@ class Background extends Component {
 	render() {
 		return (
 			<View
+				randomLettersContainer={this.randomLettersContainer}
 				randomLettersRefRight={this.randomLettersRefRight}
 				randomLettersRefLeft={this.randomLettersRefLeft}
 			/>
