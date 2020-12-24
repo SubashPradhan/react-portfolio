@@ -1,5 +1,12 @@
 import React from 'react';
 import '../Style/Background.css';
+import DragonballOne from '../../assets/DragonBall-1.svg';
+import DragonballTwo from '../../assets/DragonBall-2.svg';
+import DragonballThree from '../../assets/DragonBall-3.svg';
+import DragonballFour from '../../assets/DragonBall-4.svg';
+import DragonballFive from '../../assets/DragonBall-5.svg';
+import DragonballSix from '../../assets/DragonBall-6.svg';
+import DragonballSeven from '../../assets/DragonBall-7.svg';
 
 export default function View(props) {
 	const {
@@ -10,16 +17,15 @@ export default function View(props) {
 	return (
 		<div ref={randomLettersContainer} className="background-container">
 			<div className="random-letters-left" ref={randomLettersRefLeft}>
-				<span id="code">{'{code}'}</span>
-				<span id="learn">{'{learn}'}</span>
-				<span id="create">{'{design}'}</span>
-				<span>{'[fun]'}</span>
+				<img src={DragonballOne} alt="Dragon ball" className="dragon-balls" />
+				<img src={DragonballFour} alt="Dragon ball" className="dragon-balls" />
+				<img src={DragonballFive} alt="Dragon ball" className="dragon-balls" />
+				<img src={DragonballSeven} alt="Dragon ball" className="dragon-balls" />
 			</div>
 			<div className="random-letters-right" ref={randomLettersRefRight}>
-				<span>{'[array] '}</span>
-				<span id="share">{'{share}'}</span>
-				<span id="code">{'{code}'}</span>
-				<span id="grow">{'{grow}'}</span>
+				<img src={DragonballTwo} alt="Dragon ball" className="dragon-balls" />
+				<img src={DragonballThree} alt="Dragon ball" className="dragon-balls" />
+				<img src={DragonballSix} alt="Dragon ball" className="dragon-balls" />
 			</div>
 		</div>
 	);

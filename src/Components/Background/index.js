@@ -12,13 +12,16 @@ class Background extends Component {
 	componentDidMount() {
 		const currentClientWidth = document.documentElement.clientWidth;
 		const minWidthRight = currentClientWidth - 400;
-		const maxWidthRight = currentClientWidth - 20;
+		const maxWidthRight = currentClientWidth - 50;
 
-		const minWidthLeft = 10;
-		const maxWidthLeft = 200;
-		this.renderSymbols(this.randomLettersRefLeft, minWidthRight, maxWidthRight);
-		this.renderSymbols(this.randomLettersRefRight, minWidthLeft, maxWidthLeft);
-
+		const minWidthLeft = 20;
+		const maxWidthLeft = 400;
+		this.renderSymbols(this.randomLettersRefLeft, minWidthLeft, maxWidthLeft);
+		this.renderSymbols(
+			this.randomLettersRefRight,
+			minWidthRight,
+			maxWidthRight,
+		);
 		const arrayOfChildNodesLeft = Array.from(
 			this.randomLettersRefLeft.current.childNodes,
 		);
@@ -45,7 +48,6 @@ class Background extends Component {
 						: startingDegreeLeft - 0.15;
 			});
 			prevScrollY = window.pageYOffset;
-			console.log(window.pageYOffset);
 		});
 	}
 
@@ -57,12 +59,14 @@ class Background extends Component {
 		const childNodes = reference.current.childNodes;
 		const arrayOfChildNodes = Array.from(childNodes);
 		const currentClientHeight = document.documentElement.clientHeight;
+		let animationDelay = 0.3;
 		arrayOfChildNodes.forEach(child => {
 			const randomPositionHeight = this.getRandomNumber(0, currentClientHeight);
 			const randomPositionWidth = this.getRandomNumber(
 				minScreenSize,
 				maxScreenSize,
 			);
+			child.style.animationDuration += `${animationDelay++}s`;
 			child.style.position = 'fixed';
 			child.style.top = `${randomPositionHeight}px`;
 			child.style.left = `${randomPositionWidth}px`;
