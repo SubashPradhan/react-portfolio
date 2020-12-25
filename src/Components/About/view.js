@@ -40,7 +40,7 @@ export default function View() {
 						work to improve the News Feed experience for everyone. Also feeding
 						data for research and device training purposes to develop
 						next-generation AI technologies. Working with 80% of accuracy rate
-						consistently is most.
+						consistently is a must have.
 					</p>
 				</VerticalTimelineElement>
 
@@ -57,11 +57,11 @@ export default function View() {
 						Amsterdam, Netherlands
 					</h4>
 					<p>
-						11 weeks of intense Bootcamp where we learn by doing. Worked in a
+						11 weeks of intense bootcamp where we learn by doing. Worked in a
 						team using agile-scrum methodologies to implement new features in
 						real-world projects from Codaisseur. We use CI/CD pipelines using
 						version control tools like Git. We learned to work with React,
-						Redux, Express.js, (Node (incl. ES6), GraphQL, REST and more. More
+						Redux, Expressjs, Nodejs (incl. ES6), GraphQL, REST and more. More
 						importantly, I learned to make full-stack apps with different new
 						technologies which are deployed on a platform like Netlify, Heroku..
 					</p>
@@ -80,10 +80,10 @@ export default function View() {
 						Amsterdam, Netherlands
 					</h4>
 					<p>
-						Sadly, got Diagnosed with Tuberculosis lead me to rest home for
-						almost 5 months and Isolated, which was a major setback for my
-						professional and personal Career. Also Moved to Haarlem for better
-						Housing.
+						Sadly, got diagnosed with tuberculosis lead me to rest home for more
+						than 6 months and Isolated, which was a major setback for my
+						professional and personal Career. Also moved to Haarlem for better
+						housing.
 					</p>
 				</VerticalTimelineElement>
 
@@ -94,7 +94,7 @@ export default function View() {
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						NYCDA(New York Code & Design Academy)
+						NYCDA (New York Code & Design Academy)
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands

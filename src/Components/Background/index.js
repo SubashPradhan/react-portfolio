@@ -13,42 +13,24 @@ class Background extends Component {
 		const currentClientWidth = document.documentElement.clientWidth;
 		const minWidthRight = currentClientWidth - 400;
 		const maxWidthRight = currentClientWidth - 50;
-
 		const minWidthLeft = 20;
 		const maxWidthLeft = 400;
+
 		this.renderSymbols(this.randomLettersRefLeft, minWidthLeft, maxWidthLeft);
 		this.renderSymbols(
 			this.randomLettersRefRight,
 			minWidthRight,
 			maxWidthRight,
 		);
+
 		const arrayOfChildNodesLeft = Array.from(
 			this.randomLettersRefLeft.current.childNodes,
 		);
 		const arrayOfChildNodesRight = Array.from(
 			this.randomLettersRefRight.current.childNodes,
 		);
-		let startingDegreeRight = 0;
-		let startingDegreeLeft = -1;
-		let prevScrollY = window.pageYOffset;
-		window.addEventListener('scroll', function () {
-			console.log('prev', prevScrollY);
-			arrayOfChildNodesRight.forEach(symbol => {
-				symbol.style.transform = `translateY(${startingDegreeRight}px) rotate(${startingDegreeRight}deg)`;
-				startingDegreeRight =
-					window.scrollY < prevScrollY
-						? startingDegreeRight + 0.15
-						: startingDegreeRight - 0.15;
-			});
-			arrayOfChildNodesLeft.forEach(symbol => {
-				symbol.style.transform = `translateY(${startingDegreeLeft}px) rotate(${startingDegreeRight}deg`;
-				startingDegreeLeft =
-					window.scrollY > prevScrollY
-						? startingDegreeLeft + 0.15
-						: startingDegreeLeft - 0.15;
-			});
-			prevScrollY = window.pageYOffset;
-		});
+
+		this.handleScroll(arrayOfChildNodesLeft, arrayOfChildNodesRight);
 	}
 
 	getRandomNumber(min = 0, max) {
@@ -75,9 +57,29 @@ class Background extends Component {
 	}
 
 	// Check this later
-	handleScroll(childOne, childTwo) {
-		const combinedChildren = childOne.concat(childTwo);
-		console.log(combinedChildren);
+	handleScroll(arrayOfChildNodesLeft, arrayOfChildNodesRight) {
+		let startingDegreeRight = 0;
+		let startingDegreeLeft = 0;
+		const currentClientHeight = document.documentElement.clientHeight / 2;
+		let prevScrollY = window.pageYOffset;
+
+		window.addEventListener('scroll', () => {
+			arrayOfChildNodesLeft.forEach(symbol => {
+				symbol.style.transform = `translateY(${startingDegreeLeft}px) rotate(${startingDegreeRight}deg`;
+				startingDegreeLeft =
+					window.scrollY > prevScrollY
+						? startingDegreeLeft + 0.15
+						: startingDegreeLeft - 0.15;
+			});
+			arrayOfChildNodesRight.forEach(symbol => {
+				symbol.style.transform = `translateY(${startingDegreeRight}px) rotate(${startingDegreeRight}deg)`;
+				startingDegreeRight =
+					window.scrollY < prevScrollY
+						? startingDegreeRight + 0.15
+						: startingDegreeRight - 0.15;
+			});
+			prevScrollY = window.pageYOffset;
+		});
 	}
 
 	render() {
