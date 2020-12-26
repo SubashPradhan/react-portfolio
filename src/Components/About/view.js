@@ -29,7 +29,7 @@ export default function View() {
 					icon={<WorkIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Social media evaluator (Appen)
+						Appen - Social media evaluator
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Remote(part-time)
@@ -51,7 +51,7 @@ export default function View() {
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Codaisseur (Full-stack developer)
+						Codaisseur - Full stack developer
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
@@ -74,15 +74,15 @@ export default function View() {
 					icon={<HotelIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Diagnosed with tuberculosis, moved to Haarlem, Netherlands
+						Diagnosed with tuberculosis, moved to Haarlem.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
-						Amsterdam, Netherlands
+						Haarlem, Netherlands
 					</h4>
 					<p>
 						Sadly, got diagnosed with tuberculosis lead me to rest home for more
-						than 6 months and Isolated, which was a major setback for my
-						professional and personal Career. Also moved to Haarlem for better
+						than 6 months and isolated, which was a major setback for my
+						professional and personal career. Also moved to Haarlem for better
 						housing.
 					</p>
 				</VerticalTimelineElement>
@@ -94,7 +94,7 @@ export default function View() {
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						NYCDA (New York Code & Design Academy)
+						New York Code & Design Academy
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
@@ -115,15 +115,14 @@ export default function View() {
 					icon={<EuroIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Moved To Amsterdam
+						Moved to Amsterdam
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
 					</h4>
 					<p>
-						After struggling financially in Arnhem, Netherlands not being able
-						to find jobs as a english speaker, I just had to move Amsterdam to
-						support myself. Worked in Wagamama as a teamleader for a while.
+						Moved to Amstedam to find a job to support myself. Worked in
+						Wagamama as a teamleader for a while.
 					</p>
 				</VerticalTimelineElement>
 
@@ -134,13 +133,13 @@ export default function View() {
 					icon={<FlightTakeoffIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Welcome Myself in Netherlands
+						Welcome myself in the Netherlands.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Arnhem, Netherlands
 					</h4>
 					<p>
-						Came to Netherlands for my Automotive Engineering Bachelors.
+						Came to the Netherlands for Automotive Engineering Bachelors.
 						Completed 1 year of school successfully.
 					</p>
 				</VerticalTimelineElement>
@@ -152,14 +151,14 @@ export default function View() {
 					icon={<LaptopMacIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Technical Officer(SSN)
+						Softwarer Systems Nepal - Technical Officer
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Kathmandu, Nepal
 					</h4>
 					<p>
 						With my passion for computers and the internet soon after my
-						college, I joined Software Systems Nepal, an Accounting software
+						college, I joined Software Systems Nepal, an accounting software
 						company where I supported end-users problems regarding software bugs
 						using SQL queries and build customer retention rates with the best
 						services. Helped the company to grow it's revenue almost 2 times
