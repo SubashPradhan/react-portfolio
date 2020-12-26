@@ -41,7 +41,8 @@ class Background extends Component {
 		const childNodes = reference.current.childNodes;
 		const arrayOfChildNodes = Array.from(childNodes);
 		const currentClientHeight = document.documentElement.clientHeight;
-		let animationDelay = 0.3;
+		let animationDelay = 1;
+
 		arrayOfChildNodes.forEach(child => {
 			const randomPositionHeight = this.getRandomNumber(0, currentClientHeight);
 			const randomPositionWidth = this.getRandomNumber(
@@ -52,26 +53,23 @@ class Background extends Component {
 			child.style.position = 'fixed';
 			child.style.top = `${randomPositionHeight}px`;
 			child.style.left = `${randomPositionWidth}px`;
-			child.style.padding = '2rem';
 		});
 	}
 
-	// Check this later
-	handleScroll(arrayOfChildNodesLeft, arrayOfChildNodesRight) {
+	handleScroll(leftNode, rightNode) {
 		let startingDegreeRight = 0;
 		let startingDegreeLeft = 0;
-		const currentClientHeight = document.documentElement.clientHeight / 2;
 		let prevScrollY = window.pageYOffset;
 
 		window.addEventListener('scroll', () => {
-			arrayOfChildNodesLeft.forEach(symbol => {
+			leftNode.forEach(symbol => {
 				symbol.style.transform = `translateY(${startingDegreeLeft}px) rotate(${startingDegreeRight}deg`;
 				startingDegreeLeft =
 					window.scrollY > prevScrollY
 						? startingDegreeLeft + 0.15
 						: startingDegreeLeft - 0.15;
 			});
-			arrayOfChildNodesRight.forEach(symbol => {
+			rightNode.forEach(symbol => {
 				symbol.style.transform = `translateY(${startingDegreeRight}px) rotate(${startingDegreeRight}deg)`;
 				startingDegreeRight =
 					window.scrollY < prevScrollY
