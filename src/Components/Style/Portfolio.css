@@ -1,6 +1,7 @@
 .portfolio-container {
 	display: flex;
 	flex-direction: column;
+	perspective: 100rem;
 }
 
 .portfolio-collections {
@@ -8,6 +9,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	transform-style: preserve-3d;
 }
 
 .portfolio {
@@ -22,6 +24,7 @@
 	cursor: pointer;
 	background: linear-gradient(45deg, #06994b, #8f8f2b, #06994b);
 }
+
 .portfolio-title {
 	margin: 1rem;
 	color: white;
@@ -31,15 +34,27 @@
 .portfolio-img {
 	height: 15rem;
 	width: 20rem;
+}
+
+.portfolio-img,
+.portfolio-title,
+.portfolio-btn {
 	border-radius: 1rem;
+	transition: all 0.5s ease-in-out;
 }
 
 .portfolio-btn {
 	cursor: pointer;
+	outline: none;
+	background: #0e101c;
 }
 
-@media only screen and (max-width: 700px) {
-	.portfolio {
-		margin-left: 0;
-	}
+.btn-links {
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.2rem;
+}
+
+.portfolio-btn:hover {
+	background: linear-gradient(90deg, rgb(16, 33, 27), rgb(9, 163, 91));
 }
