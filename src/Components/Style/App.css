@@ -6,6 +6,14 @@
 	background: #0e101c;
 	font-family: 'Yatra One';
 }
+
+h1 {
+	color: white;
+	margin: 1rem;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;

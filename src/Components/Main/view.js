@@ -1,10 +1,11 @@
 import React from 'react';
 import Home from '../Home';
 import About from '../About';
-import Portfolio from '../Portfolio';
+// import Portfolio from '../Portfolio';
 import Contact from '../Contact';
 import Skills from '../Skills';
 import '../Style/Main.css';
+import PortfolioNew from '../PortfolioNew';
 
 export default function View() {
 	return (
@@ -16,7 +17,7 @@ export default function View() {
 				<About id="about" />
 			</section>
 			<section id="portfolio">
-				<Portfolio />
+				<PortfolioNew />
 			</section>
 			<section id="skills">
 				<Skills />
