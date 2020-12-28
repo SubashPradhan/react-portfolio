@@ -1,7 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
 }
+
 .container {
 	background: #0e101c;
 	font-family: 'Yatra One';
@@ -9,9 +12,9 @@
 
 h1 {
 	color: white;
-	margin: 1rem;
+	margin-top: 5rem;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	letter-spacing: 0.4rem;
 }
 
