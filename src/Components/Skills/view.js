@@ -6,7 +6,9 @@ import HTML5Icon from '../../assets/html5.svg';
 import Css3Icon from '../../assets/css3.svg';
 import NodeIcon from '../../assets/nodejs.svg';
 import Tada from 'react-reveal/Tada';
+import { Fade } from 'react-reveal';
 import '../Style/Skill.css';
+import { CircularProgress } from '@material-ui/core';
 
 export default function View() {
 	return (
@@ -15,44 +17,53 @@ export default function View() {
 				<h1>{'[ Skills ]'}</h1>
 			</Tada>
 			<div className="skills-collections">
-				<div className="skills">
-					<img
-						src={HTML5Icon}
-						className="skill-icons"
-						title="HTML5"
-						alt="HTML5"
-					/>
-				</div>
-				<div className="skills">
-					<img src={Css3Icon} className="skill-icons" title="Css3" alt="Css3" />
-				</div>
-				<div className="skills">
-					<img
-						src={JSIcon}
-						className="skill-icons"
-						title="Javascript"
-						alt="Javascript"
-					/>
-				</div>
-				<div className="skills">
-					<img
-						src={ReactIcon}
-						className="skill-icons"
-						title="React"
-						alt="React"
-					/>
-				</div>
-				<div className="skills">
-					<img src={VueIcon} className="skill-icons" title="Vue" alt="Vue" />
-				</div>
-				<div className="skills">
-					<img
-						src={NodeIcon}
-						className="skill-icons"
-						title="Nodejs"
-						alt="Nodejs"
-					/>
-				</div>
+				<Fade left>
+					<div className="skills">
+						<img
+							src={HTML5Icon}
+							className="skill-icons"
+							title="HTML5"
+							alt="HTML5"
+						/>
+					</div>
+					<div className="skills">
+						<img
+							src={Css3Icon}
+							className="skill-icons"
+							title="Css3"
+							alt="Css3"
+						/>
+					</div>
+					<div className="skills">
+						<img
+							src={JSIcon}
+							className="skill-icons"
+							title="Javascript"
+							alt="Javascript"
+						/>
+					</div>
+				</Fade>
+				<Fade right>
+					<div className="skills">
+						<img
+							src={ReactIcon}
+							className="skill-icons"
+							title="React"
+							alt="React"
+						/>
+					</div>
+					<div className="skills">
+						<img src={VueIcon} className="skill-icons" title="Vue" alt="Vue" />
+					</div>
+					<div className="skills">
+						<img
+							src={NodeIcon}
+							className="skill-icons"
+							title="Nodejs"
+							alt="Nodejs"
+						/>
+					</div>
+				</Fade>
 			</div>
 		</div>
 	);
