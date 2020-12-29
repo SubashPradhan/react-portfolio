@@ -6,6 +6,7 @@ import CoronaUpdatesApp from '../../assets/corona-updates.png';
 import Carousel from '../../assets/3d-carousel.png';
 import HtmlPortfolio from '../../assets/html-portfolio.png';
 import { Fade } from 'react-reveal';
+import Tada from 'react-reveal/Tada';
 import '../Style/Portfolio.css';
 
 export default function View(props) {
@@ -13,7 +14,9 @@ export default function View(props) {
 	return (
 		<Fade bottom>
 			<div className="portfolio-container">
-				<h1>Portfolio</h1>
+				<Tada>
+					<h1>{'< Portfolio />'}</h1>
+				</Tada>
 				<div className="portfolio-collections" ref={portfolioRef}>
 					<div className="portfolio">
 						<h3 className="portfolio-title">Corona Updates</h3>

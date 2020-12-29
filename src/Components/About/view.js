@@ -17,7 +17,7 @@ export default function View() {
 	return (
 		<div className="about-me-container">
 			<Tada>
-				<h1>About me</h1>
+				<h1>{'{ About me }'}</h1>
 			</Tada>
 
 			<VerticalTimeline>
