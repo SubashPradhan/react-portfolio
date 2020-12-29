@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../Home';
 import About from '../About';
 import Contact from '../Contact';
-import Skills from '../Skills';
+import SkillsNew from '../SkillsNew';
 import Portfolio from '../Portfolio';
 import '../Style/Main.css';
 
@@ -19,7 +19,7 @@ export default function View() {
 				<Portfolio />
 			</section>
 			<section id="skills">
-				<Skills />
+				<SkillsNew />
 			</section>
 			<section id="contact">
 				<Contact />
