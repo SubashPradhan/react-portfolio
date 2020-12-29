@@ -7,7 +7,7 @@ import EuroIcon from '@material-ui/icons/Euro';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import 'react-vertical-timeline-component/style.min.css';
-import '../Style/About.css';
+import '../../Style/About.css';
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,

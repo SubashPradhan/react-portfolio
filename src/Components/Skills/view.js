@@ -7,8 +7,7 @@ import Css3Icon from '../../assets/css3.svg';
 import NodeIcon from '../../assets/nodejs.svg';
 import Tada from 'react-reveal/Tada';
 import { Fade } from 'react-reveal';
-import '../Style/Skill.css';
-import { CircularProgress } from '@material-ui/core';
+import '../../Style/Skill.css';
 
 export default function View() {
 	return (

@@ -4,7 +4,7 @@ import About from '../About';
 import Contact from '../Contact';
 import Skills from '../Skills';
 import Portfolio from '../Portfolio';
-import '../Style/Main.css';
+import '../../Style/Main.css';
 
 export default function View() {
 	return (

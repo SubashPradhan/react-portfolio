@@ -17,9 +17,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 1rem;
-	height: 22rem;
-	padding: 1.5rem;
+	min-height: 22rem;
+	padding: 2rem;
 	margin: 2rem;
 	cursor: pointer;
 	background: linear-gradient(45deg, #06994b, #8f8f2b, #06994b);
@@ -37,6 +36,7 @@
 	width: 20rem;
 }
 
+.portfolio,
 .portfolio-img,
 .portfolio-title,
 .portfolio-btn {
@@ -58,4 +58,15 @@
 
 .portfolio-btn:hover {
 	background: linear-gradient(90deg, rgb(16, 33, 27), rgb(9, 163, 91));
+}
+
+@media only screen and (max-width: 700px) {
+	.portfolio {
+		margin: 1rem;
+		width: 80%;
+		text-align: center;
+	}
+	.portfolio-title {
+		font-size: 1.2rem;
+	}
 }
