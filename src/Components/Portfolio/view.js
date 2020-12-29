@@ -5,7 +5,7 @@ import ProjectManagementApp from '../../assets/project-management.png';
 import CoronaUpdatesApp from '../../assets/corona-updates.png';
 import Carousel from '../../assets/3d-carousel.png';
 import HtmlPortfolio from '../../assets/html-portfolio.png';
-import { Fade, Zoom } from 'react-reveal';
+import { Fade } from 'react-reveal';
 import '../Style/Portfolio.css';
 
 export default function View(props) {

@@ -1,4 +1,21 @@
-.skills{
-  width: 75%;
-  text-align: center;
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-collections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skills {
+	margin: 3rem;
+}
+
+.skill-icons {
+	height: 7rem;
+	min-width: 5rem;
 }
