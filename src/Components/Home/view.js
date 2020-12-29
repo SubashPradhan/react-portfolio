@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/Home.css';
+import '../../Style/Home.css';
 import Typist from 'react-typist';
 import MySvg from '../../assets/my-svg.svg';
 

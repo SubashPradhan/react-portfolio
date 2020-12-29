@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/Background.css';
+import '../../Style/Background.css';
 import DragonballOne from '../../assets/DragonBall-1.svg';
 import DragonballTwo from '../../assets/DragonBall-2.svg';
 import DragonballThree from '../../assets/DragonBall-3.svg';

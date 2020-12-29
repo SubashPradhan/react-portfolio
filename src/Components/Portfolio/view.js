@@ -5,9 +5,8 @@ import ProjectManagementApp from '../../assets/project-management.png';
 import CoronaUpdatesApp from '../../assets/corona-updates.png';
 import Carousel from '../../assets/3d-carousel.png';
 import HtmlPortfolio from '../../assets/html-portfolio.png';
-import { Fade } from 'react-reveal';
 import Tada from 'react-reveal/Tada';
-import '../Style/Portfolio.css';
+import '../../Style/Portfolio.css';
 
 export default function View(props) {
 	const { portfolioRef } = props;
