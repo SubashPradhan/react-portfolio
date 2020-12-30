@@ -7,7 +7,12 @@ class Navbar extends Component {
 		this.handleClickOutside = this.handleClickOutside.bind(this);
 		this.state = {
 			menuClicked: false,
+			showMenuWrapper: false,
 		};
+
+		this.handleScrollView();
+		this.handleClickOutside();
+		this.handleMenu();
 	}
 
 	handleMenu() {
@@ -17,14 +22,35 @@ class Navbar extends Component {
 	}
 
 	handleClickOutside() {
-		if (this.state.menuClicked) {
-			this.handleMenu();
-		}
+		document.addEventListener('click', () => {
+			this.state.menuClicked && this.handleMenu();
+		});
 	}
+
+	handleScrollView() {
+		const screenHeight = document.documentElement.clientHeight / 2;
+		document.addEventListener('scroll', () => {
+			if (window.pageYOffset > screenHeight) {
+				this.setState({
+					showMenuWrapper: true,
+				});
+			} else {
+				this.setState({
+					showMenuWrapper: false,
+				});
+			}
+		});
+	}
+
+	handleC;
 
 	render() {
 		return (
-			<View menuClicked={this.state.menuClicked} handleMenu={this.handleMenu} />
+			<View
+				menuClicked={this.state.menuClicked}
+				handleMenu={this.handleMenu}
+				showMenuWrapper={this.state.showMenuWrapper}
+			/>
 		);
 	}
 }
