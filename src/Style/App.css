@@ -28,6 +28,7 @@ h1 {
 	font-size: 1.2rem;
 	letter-spacing: 0.2rem;
 	color: whitesmoke;
+	padding: 0.1rem;
 }
 
 @media only screen and (max-width: 700px) {
