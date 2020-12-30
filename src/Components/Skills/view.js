@@ -5,6 +5,8 @@ import VueIcon from '../../assets/vue.svg';
 import HTML5Icon from '../../assets/html5.svg';
 import Css3Icon from '../../assets/css3.svg';
 import NodeIcon from '../../assets/nodejs.svg';
+import TsIcon from '../../assets/TS.svg';
+import CodeIcon from '../../assets/coding.svg';
 import Tada from 'react-reveal/Tada';
 import { Fade } from 'react-reveal';
 import '../../Style/Skill.css';
@@ -56,10 +58,28 @@ export default function View() {
 					</div>
 					<div className="skills">
 						<img
+							src={TsIcon}
+							className="skill-icons"
+							title="TypeScript"
+							alt="Typescript"
+						/>
+					</div>
+					<div className="skills">
+						<img
 							src={NodeIcon}
 							className="skill-icons"
 							title="Nodejs"
 							alt="Nodejs"
+						/>
+					</div>
+				</Fade>
+				<Fade bottom>
+					<div className="skills">
+						<img
+							src={CodeIcon}
+							className="skill-icons"
+							title="Love coding"
+							alt="Coding"
 						/>
 					</div>
 				</Fade>

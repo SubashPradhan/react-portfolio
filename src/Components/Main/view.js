@@ -13,7 +13,7 @@ export default function View() {
 				<Home />
 			</section>
 			<section id="about">
-				<About id="about" />
+				<About />
 			</section>
 			<section id="portfolio">
 				<Portfolio />
