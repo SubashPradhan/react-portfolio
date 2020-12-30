@@ -1,0 +1,53 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: aliceblue;
+	/* Change this */
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.field {
+	position: relative;
+	margin: 2rem;
+	letter-spacing: 0.3rem;
+	width: 25rem;
+}
+
+.form-input {
+	border: none;
+	outline: none;
+	background: none;
+	border-bottom: 1px solid;
+	width: 100%;
+	font-size: 1.5rem;
+	font-family: cursive;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.form-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.form-textarea {
+	width: 100%;
+	height: 15rem;
+	outline: none;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	font-size: 1.3rem;
+	background: aliceblue;
+}
