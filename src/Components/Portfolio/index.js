@@ -22,7 +22,7 @@ class PortfolioNew extends Component {
 		const children = htmlElement.childNodes;
 		htmlElement.addEventListener('mouseenter', () => {
 			children.forEach(child => {
-				child.style.transform = 'translateZ(10rem)';
+				child.style.transform = 'translateZ(5rem)';
 			});
 		});
 		htmlElement.addEventListener('mouseleave', () => {

@@ -29,17 +29,17 @@ export default function View() {
 					icon={<WorkIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Appen - Social media evaluator
+						Appen - Social media evaluator.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
-						Remote(part-time)
+						Remote (part-time)
 					</h4>
 					<p>
 						A project-based company, where we evaluate web pages and social
 						media feeds so we can better understand the News Feed ecosystem and
 						work to improve the News Feed experience for everyone. Also feeding
 						data for research and device training purposes to develop
-						next-generation AI technologies. Working with 80% of accuracy rate
+						next-generation AI technologies. Working with high accuracy rate
 						consistently is a must have.
 					</p>
 				</VerticalTimelineElement>
@@ -51,7 +51,7 @@ export default function View() {
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Codaisseur - Full stack developer
+						Codaisseur - Full stack developer.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
@@ -80,10 +80,9 @@ export default function View() {
 						Haarlem, Netherlands
 					</h4>
 					<p>
-						Sadly, got diagnosed with tuberculosis lead me to rest home for more
-						than 6 months and isolated, which was a major setback for my
-						professional and personal career. Also moved to Haarlem for better
-						housing.
+						Being diagnosed with tuberculosis lead me to rest home for more than
+						6 months and isolated, which was a major setback for my professional
+						and personal career. Also moved to Haarlem for better housing.
 					</p>
 				</VerticalTimelineElement>
 
@@ -94,14 +93,14 @@ export default function View() {
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						New York Code & Design Academy
+						New York Code & Design Academy.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
 					</h4>
 					<p>
-						Being intrested in Web Development, as I was setting up myself in
-						Amsterdam, to pursue my passion in web development and to taste
+						As my interest grew in web development while I was setting up in
+						Amsterdam, to pursue my passion as a software developer and to taste
 						coding I joined NYCDA that was 96 hours of course for HTML, CSS, JS
 						including bootstrap, SAAS. This is where I started my journey for
 						web development.
@@ -115,13 +114,13 @@ export default function View() {
 					icon={<EuroIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Moved to Amsterdam
+						Moved to Amsterdam.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Amsterdam, Netherlands
 					</h4>
 					<p>
-						Moved to Amstedam to find a job to support myself. Worked in
+						Moved to Amsterdam to find a job and to support myself. Worked in
 						Wagamama as a teamleader for a while.
 					</p>
 				</VerticalTimelineElement>
@@ -133,14 +132,14 @@ export default function View() {
 					icon={<FlightTakeoffIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Welcome myself in the Netherlands.
+						Landed in the Netherlands.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Arnhem, Netherlands
 					</h4>
 					<p>
-						Came to the Netherlands for Automotive Engineering Bachelors.
-						Completed 1 year of school successfully.
+						Came to the Netherlands for my bachelors in automotive engineering.
+						Completed a year successfully.
 					</p>
 				</VerticalTimelineElement>
 
@@ -151,18 +150,17 @@ export default function View() {
 					icon={<LaptopMacIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Softwarer Systems Nepal - Technical Officer
+						Software Systems Nepal - Technical officer.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Kathmandu, Nepal
 					</h4>
 					<p>
-						With my passion for computers and the internet soon after my
+						With my passion for computers and the technologies soon after my
 						college, I joined Software Systems Nepal, an accounting software
-						company where I supported end-users problems regarding software bugs
-						using SQL queries and build customer retention rates with the best
-						services. Helped the company to grow it's revenue almost 2 times
-						more within a year.
+						company where I supported end-users problems regarding software
+						bugs, installations, networking and build customer retention rates
+						with the best services.
 					</p>
 				</VerticalTimelineElement>
 
