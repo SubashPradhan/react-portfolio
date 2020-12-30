@@ -17,7 +17,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 22rem;
 	padding: 2rem;
 	margin: 2rem;
 	cursor: pointer;
@@ -28,12 +27,12 @@
 	margin: 1rem;
 	font-size: 1.5rem;
 	color: white;
-	letter-spacing: 0.4rem;
+	letter-spacing: 0.2rem;
 }
 
 .portfolio-img {
 	height: 15rem;
-	width: 20rem;
+	width: 18rem;
 }
 
 .portfolio,
