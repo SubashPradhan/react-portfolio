@@ -1,13 +1,13 @@
 .home-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: safe;
+	justify-content: center;
 	align-items: center;
 	height: 100vh;
 }
 
 .home-container div {
-	margin: 1rem;
+	margin: 0.3rem;
 }
 
 .home-img {
@@ -19,18 +19,22 @@
 	font-size: 2rem;
 	color: white;
 	letter-spacing: 0.2rem;
+	min-height: 10rem;
 }
 
 @media only screen and (max-width: 700px) {
 	.home-container {
 		justify-content: safe;
 	}
+
+	.home-container div {
+		margin: 0.5rem;
+	}
 	.home-img {
-		margin-top: 3rem;
 		height: 20rem;
 	}
 	.welcome-text {
 		font-size: 1.5rem;
-		padding: 0.7rem;
+		padding: 1rem;
 	}
 }
