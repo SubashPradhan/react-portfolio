@@ -2,17 +2,17 @@
 	color: blue;
 	font-size: 1.3rem;
 	letter-spacing: 0.15rem;
+	font-size: 1rem;
 }
 
 .vertical-timeline-element-date {
 	color: white;
-	font-weight: 900;
-	font-size: 2.5rem;
 }
 
 .vertical-timeline-element p {
-	font-weight: bold;
+	font-weight: 600;
 	color: black;
+	font-size: 1rem;
 }
 
 @media only screen and (max-width: 700px) {
