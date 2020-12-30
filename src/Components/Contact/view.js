@@ -2,7 +2,8 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 import '../../Style/Contact.css';
 
-export default function View() {
+export default function View(props) {
+	const { handleFocus, handleFocusOut } = props;
 	return (
 		<div className="contact-container">
 			<Fade>
@@ -11,12 +12,20 @@ export default function View() {
 			<div className="form-container">
 				<form className="form">
 					<div className="field">
-						<input className="form-input"></input>
+						<input
+							className="form-input"
+							onFocus={e => handleFocus(e)}
+							onBlur={e => handleFocusOut(e)}
+						></input>
 						<label className="form-label">Name:</label>
 					</div>
 
 					<div className="field">
-						<input className="form-input"></input>
+						<input
+							className="form-input"
+							onFocus={e => handleFocus(e)}
+							onBlur={e => handleFocusOut(e)}
+						></input>
 						<label className="form-label">Email:</label>
 					</div>
 
@@ -24,6 +33,7 @@ export default function View() {
 						<label className="textarea-label">Message:</label>
 						<textarea className="form-textarea" />
 					</div>
+					<button>Submit</button>
 				</form>
 			</div>
 		</div>
