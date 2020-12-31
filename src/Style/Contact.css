@@ -3,9 +3,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	color: aliceblue;
-	/* Change this */
+	height: 100vh;
 }
 
 .form {
@@ -18,28 +17,33 @@
 
 .field {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	margin: 2rem;
 	letter-spacing: 0.3rem;
 	width: 25rem;
+	z-index: 0;
 }
 
 .form-input {
 	border: none;
 	outline: none;
 	background: none;
-	border-bottom: 1px solid;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-family: 'Yatra one';
 	color: white;
 	letter-spacing: 0.2rem;
+	text-indent: 0.3rem;
 	border-bottom: 1px solid white;
 }
 
 .form-label {
 	position: absolute;
-	top: 0;
+	top: -0.4rem;
 	left: 0;
+	text-indent: 0.3rem;
+	z-index: -1;
 	transition: all 0.4s ease-in-out;
 }
 
@@ -58,12 +62,6 @@
 	animation: focus 0.4s ease-in-out;
 	border-color: green;
 }
-
-.form-label-focus {
-	top: -1rem;
-	font-size: 1rem;
-}
-
 @keyframes focus {
 	from {
 		width: 0%;
@@ -73,6 +71,62 @@
 	}
 }
 
+.form-label-focus {
+	top: -1rem;
+	font-size: 1rem;
+}
+
+.textarea-label {
+	text-align: center;
+}
+
+.submit-btn {
+	position: relative;
+	border-radius: 0.4rem;
+	background: linear-gradient(
+		45deg,
+		rgb(243, 245, 226),
+		rgb(196, 142, 43),
+		rgb(241, 99, 47)
+	);
+	overflow: hidden;
+	font-size: 1.4rem;
+	letter-spacing: 0.2rem;
+	padding: 0.3rem;
+	margin-top: 10px;
+	min-width: 10rem;
+	border: none;
+	box-shadow: 3px 7px 7px rgb(71, 70, 36);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.submit-btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.submit-btn::before,
+.submit-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -150%;
+	width: 150%;
+	height: 100%;
+	background: #ffffff;
+	opacity: 0.7;
+	transform: rotate(45deg);
+	transition: all ease 1s;
+}
+
+.submit-btn::after {
+	transition-delay: 0.2s;
+}
+.submit-btn:hover::after,
+.submit-btn:hover::before {
+	left: 100%;
+}
 @media only screen and (max-width: 700px) {
 	.field {
 		width: 80%;
