@@ -3,7 +3,17 @@ import { Fade } from 'react-reveal';
 import '../../Style/Contact.css';
 
 export default function View(props) {
-	const { handleFocus, handleFocusOut } = props;
+	const {
+		value,
+		isEmail,
+		isName,
+		handleChange,
+		handleFocus,
+		handleFocusOut,
+	} = props;
+	const { name, email, message } = value;
+	console.log(name);
+	console.log(isName);
 	return (
 		<div className="contact-container">
 			<Fade>
@@ -14,26 +24,51 @@ export default function View(props) {
 					<div className="field">
 						<input
 							className="form-input"
+							id="name"
+							type="text"
+							value={name}
+							onChange={e => handleChange(e, 'name')}
 							onFocus={e => handleFocus(e)}
 							onBlur={e => handleFocusOut(e)}
 						></input>
-						<label className="form-label">Name:</label>
+						<label
+							className={isName ? 'form-label form-label-focus' : 'form-label'}
+							id="label-name"
+						>
+							Name:
+						</label>
 					</div>
 
 					<div className="field">
 						<input
 							className="form-input"
+							id="email"
+							type="text"
+							value={email}
+							onChange={e => handleChange(e, 'email')}
 							onFocus={e => handleFocus(e)}
 							onBlur={e => handleFocusOut(e)}
 						></input>
-						<label className="form-label">Email:</label>
+						<label
+							className={isEmail ? 'form-label form-label-focus' : 'form-label'}
+							id="label-email"
+						>
+							Email:
+						</label>
 					</div>
 
 					<div className="field">
-						<label className="textarea-label">Message:</label>
-						<textarea className="form-textarea" />
+						<label className="textarea-label">
+							Feedbacks are always appreciated.
+						</label>
+						<textarea
+							className="form-textarea"
+							value={message}
+							placeholder="Your Feedbacks."
+							onChange={e => handleChange(e, 'message')}
+						/>
 					</div>
-					<button>Submit</button>
+					<button className="submit-btn">Submit</button>
 				</form>
 			</div>
 		</div>
