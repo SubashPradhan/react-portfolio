@@ -1,6 +1,6 @@
 import React from 'react';
-import { Fade } from 'react-reveal';
 import '../../Style/Contact.css';
+import Tada from 'react-reveal/Tada';
 
 export default function View(props) {
 	const {
@@ -11,14 +11,18 @@ export default function View(props) {
 		handleFocus,
 		handleFocusOut,
 		handleSubmit,
+		errorMessage,
 	} = props;
 	const { name, email, message } = value;
 
+	const error = <div className="error-msg">All fields are Required</div>;
+
 	return (
 		<div className="contact-container">
-			<Fade>
+			<Tada>
 				<h1>"Contact"</h1>
-			</Fade>
+			</Tada>
+			{errorMessage && error}
 			<div className="form-container">
 				<form
 					className="form"

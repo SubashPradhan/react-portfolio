@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
-import { contactDetails } from '../../contactDetails';
+import { contactDetails } from '../contactDetails';
 import View from './view';
 
 class Contact extends Component {
@@ -14,6 +14,7 @@ class Contact extends Component {
 			subject: 'Message From Portfolio',
 			isName: false,
 			isEmail: false,
+			errorMessage: false,
 		};
 		this.handleFocus = this.handleFocus.bind(this);
 		this.handleFocusOut = this.handleFocusOut.bind(this);
@@ -59,17 +60,35 @@ class Contact extends Component {
 		currentInput.classList.remove('form-input-focus');
 	}
 
-	async handleSubmit(e) {
-		const { service, template, id } = contactDetails;
-		e.preventDefault();
-		try {
-			await emailjs.send(service, template, this.state, id);
+	handleError() {
+		const { name, message, email } = this.state;
+		const checkFields = [name, message, email];
+		const checkEmptyFields = checkFields.every(fields => fields);
+		if (!checkEmptyFields) {
 			this.setState({
-				name: '',
-				email: '',
-				message: '',
-				// showModal: true,
+				errorMessage: true,
 			});
+		} else {
+			this.setState({
+				errorMessage: false,
+			});
+		}
+	}
+
+	async handleSubmit(e) {
+		e.preventDefault();
+		const { service, template, id } = contactDetails;
+		await this.handleError();
+		try {
+			if (!this.state.errorMessage) {
+				await emailjs.send(service, template, this.state, id);
+				this.setState({
+					name: '',
+					email: '',
+					message: '',
+					// showModal: true,
+				});
+			}
 		} catch (error) {
 			console.log(error);
 		}
@@ -85,6 +104,7 @@ class Contact extends Component {
 				handleFocus={this.handleFocus}
 				handleFocusOut={this.handleFocusOut}
 				handleSubmit={this.handleSubmit}
+				errorMessage={this.state.errorMessage}
 			/>
 		);
 	}

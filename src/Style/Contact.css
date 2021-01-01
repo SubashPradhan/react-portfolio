@@ -4,7 +4,6 @@
 	justify-content: center;
 	align-items: center;
 	color: aliceblue;
-	height: 100vh;
 }
 
 .form {
@@ -12,6 +11,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	font-size: 1.5rem;
 }
 
@@ -19,9 +19,9 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: 2rem;
+	margin: 3rem;
 	letter-spacing: 0.3rem;
-	width: 25rem;
+	width: 40rem;
 	z-index: 0;
 }
 
@@ -48,13 +48,14 @@
 }
 
 .form-textarea {
-	width: 100%;
+	width: 90%;
 	height: 10rem;
 	outline: none;
 	border-radius: 1rem;
 	margin-top: 1rem;
 	padding: 1rem;
 	font-size: 1.3rem;
+	letter-spacing: 0.2rem;
 	background: aliceblue;
 }
 
@@ -99,8 +100,8 @@
 	box-shadow: 3px 7px 7px rgb(71, 70, 36);
 	transition: all 0.5s ease-in-out;
 	cursor: pointer;
+	margin-bottom: 3rem;
 }
-
 .submit-btn:focus {
 	outline: none;
 	box-shadow: none;
@@ -127,9 +128,35 @@
 .submit-btn:hover::before {
 	left: 100%;
 }
+
+.error-msg {
+	color: red;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	animation: error 0.5s ease-in-out;
+	padding: 0.3rem;
+}
+
+@keyframes error {
+	0% {
+		transform: rotate(0) scale(0.2);
+	}
+	25% {
+		transform: rotate(25deg) scale(0.4);
+	}
+	50% {
+		transform: rotate(-25deg) scale(0.7);
+	}
+	100% {
+		transform: rotate(0) scale(1);
+	}
+}
 @media only screen and (max-width: 700px) {
 	.field {
 		width: 80%;
+		margin: 2rem;
 	}
 	.form-textarea {
 		max-width: 90%;
