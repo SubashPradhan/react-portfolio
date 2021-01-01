@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
-import { contactDetails } from '../contactDetails';
+import { contactDetails } from '../../contactDetails';
 import View from './view';
 
 class Contact extends Component {
