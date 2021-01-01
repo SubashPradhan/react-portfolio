@@ -10,26 +10,28 @@ import Background from '../Background';
 import Footer from '../Footer';
 
 export default function View(props) {
-	const { handleClickOutside } = props;
+	const { handleClickOutside, showMenu } = props;
 	return (
 		<div className="main-container" onClick={() => handleClickOutside()}>
 			<Navbar />
 			<Background />
-			<section id="home">
-				<Home />
-			</section>
-			<section id="about">
-				<About />
-			</section>
-			<section id="portfolio">
-				<Portfolio />
-			</section>
-			<section id="skills">
-				<Skills />
-			</section>
-			<section id="contact">
-				<Contact />
-			</section>
+			<div className={showMenu ? 'page-container blur' : 'page-container'}>
+				<section id="home">
+					<Home />
+				</section>
+				<section id="about">
+					<About />
+				</section>
+				<section id="portfolio">
+					<Portfolio />
+				</section>
+				<section id="skills">
+					<Skills />
+				</section>
+				<section id="contact">
+					<Contact />
+				</section>
+			</div>
 			<Footer />
 		</div>
 	);
