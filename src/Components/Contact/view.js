@@ -10,17 +10,21 @@ export default function View(props) {
 		handleChange,
 		handleFocus,
 		handleFocusOut,
+		handleSubmit,
 	} = props;
 	const { name, email, message } = value;
-	console.log(name);
-	console.log(isName);
+
 	return (
 		<div className="contact-container">
 			<Fade>
 				<h1>"Contact"</h1>
 			</Fade>
 			<div className="form-container">
-				<form className="form">
+				<form
+					className="form"
+					onSubmit={e => handleSubmit(e)}
+					autoComplete="off"
+				>
 					<div className="field">
 						<input
 							className="form-input"

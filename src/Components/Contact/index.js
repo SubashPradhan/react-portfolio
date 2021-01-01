@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
+import { contactDetails } from '../contactDetails';
 import View from './view';
 
 class Contact extends Component {
@@ -9,12 +11,14 @@ class Contact extends Component {
 			name: '',
 			email: '',
 			message: '',
+			subject: 'Message From Portfolio',
 			isName: false,
 			isEmail: false,
 		};
 		this.handleFocus = this.handleFocus.bind(this);
 		this.handleFocusOut = this.handleFocusOut.bind(this);
 		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleChange(e, field) {
@@ -55,6 +59,22 @@ class Contact extends Component {
 		currentInput.classList.remove('form-input-focus');
 	}
 
+	async handleSubmit(e) {
+		const { service, template, id } = contactDetails;
+		e.preventDefault();
+		try {
+			await emailjs.send(service, template, this.state, id);
+			this.setState({
+				name: '',
+				email: '',
+				message: '',
+				// showModal: true,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	}
+
 	render() {
 		return (
 			<View
@@ -64,6 +84,7 @@ class Contact extends Component {
 				handleChange={this.handleChange}
 				handleFocus={this.handleFocus}
 				handleFocusOut={this.handleFocusOut}
+				handleSubmit={this.handleSubmit}
 			/>
 		);
 	}
