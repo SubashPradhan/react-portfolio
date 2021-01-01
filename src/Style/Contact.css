@@ -91,16 +91,17 @@
 		rgb(241, 99, 47)
 	);
 	overflow: hidden;
-	font-size: 1.4rem;
 	letter-spacing: 0.2rem;
 	padding: 0.3rem;
-	margin-top: 10px;
 	min-width: 10rem;
 	border: none;
-	box-shadow: 3px 7px 7px rgb(71, 70, 36);
+	box-shadow: 3px 7px 7px rgb(146, 146, 74);
 	transition: all 0.5s ease-in-out;
 	cursor: pointer;
 	margin-bottom: 3rem;
+	font-size: 1.4rem;
+	font-family: 'Yatra One';
+	font-weight: bold;
 }
 .submit-btn:focus {
 	outline: none;
@@ -153,6 +154,14 @@
 		transform: rotate(0) scale(1);
 	}
 }
+
+.modal {
+	position: absolute;
+	top: 20%;
+	width: 90%;
+	animation: fade-in 0.5s linear;
+}
+
 @media only screen and (max-width: 700px) {
 	.field {
 		width: 80%;

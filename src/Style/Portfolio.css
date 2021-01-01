@@ -21,6 +21,7 @@
 	margin: 2rem;
 	cursor: pointer;
 	background: linear-gradient(45deg, #06994b, #8f8f2b, #06994b);
+	opacity: 0.9;
 }
 
 .portfolio-title {

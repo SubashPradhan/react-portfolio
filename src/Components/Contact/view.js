@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../Style/Contact.css';
 import Tada from 'react-reveal/Tada';
+import ThankyouModal from '../ThankyouModal';
 
 export default function View(props) {
 	const {
@@ -12,10 +13,17 @@ export default function View(props) {
 		handleFocusOut,
 		handleSubmit,
 		errorMessage,
+		showModal,
 	} = props;
 	const { name, email, message } = value;
+	console.log(showModal);
 
 	const error = <div className="error-msg">All fields are Required</div>;
+	const modal = (
+		<div className="modal">
+			<ThankyouModal />
+		</div>
+	);
 
 	return (
 		<div className="contact-container">
@@ -77,6 +85,7 @@ export default function View(props) {
 						/>
 					</div>
 					<button className="submit-btn">Submit</button>
+					{showModal && modal}
 				</form>
 			</div>
 		</div>
