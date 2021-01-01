@@ -7,6 +7,7 @@ import Css3Icon from '../../assets/css3.svg';
 import NodeIcon from '../../assets/nodejs.svg';
 import TsIcon from '../../assets/TS.svg';
 import CodeIcon from '../../assets/coding.svg';
+import FigmaIcon from '../../assets/figma.svg';
 import Tada from 'react-reveal/Tada';
 import { Fade } from 'react-reveal';
 import '../../Style/Skill.css';
@@ -74,6 +75,14 @@ export default function View() {
 					</div>
 				</Fade>
 				<Fade bottom>
+					<div className="skills">
+						<img
+							src={FigmaIcon}
+							className="skill-icons"
+							title="Figma"
+							alt="Figma"
+						/>
+					</div>
 					<div className="skills">
 						<img
 							src={CodeIcon}

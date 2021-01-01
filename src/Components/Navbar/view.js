@@ -22,10 +22,13 @@ export default function View(props) {
 						Home
 					</a>
 					<a href="#about" className="navbar-links">
-						About
+						About Me
 					</a>
 					<a href="#portfolio" className="navbar-links">
 						Portfolio
+					</a>
+					<a href="#skills" className="navbar-links">
+						Skills
 					</a>
 					<a href="#contact" className="navbar-links">
 						Contact
