@@ -5,10 +5,16 @@ import Contact from '../Contact';
 import Skills from '../Skills';
 import Portfolio from '../Portfolio';
 import '../../Style/Main.css';
+import Navbar from '../Navbar';
+import Background from '../Background';
+import Footer from '../Footer';
 
-export default function View() {
+export default function View(props) {
+	const { handleClickOutside } = props;
 	return (
-		<div className="main-container">
+		<div className="main-container" onClick={() => handleClickOutside()}>
+			<Navbar />
+			<Background />
 			<section id="home">
 				<Home />
 			</section>
@@ -24,6 +30,7 @@ export default function View() {
 			<section id="contact">
 				<Contact />
 			</section>
+			<Footer />
 		</div>
 	);
 }

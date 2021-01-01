@@ -6,13 +6,13 @@ import Subash from '../../assets/subash.jpg';
 import '../../Style/Navbar.css';
 
 export default function View(props) {
-	const { handleMenu, menuClicked, showMenuWrapper } = props;
+	const { handleMenu, showMenu, showMenuWrapper } = props;
 
 	return (
 		<div className="navigation-container">
 			<div
 				className={
-					menuClicked
+					showMenu
 						? 'navbar-show navbar-container'
 						: ' navbar-hide navbar-container'
 				}
@@ -77,23 +77,19 @@ export default function View(props) {
 			</div>
 			<div
 				className={
-					showMenuWrapper && !menuClicked ? 'menu-wrapper' : 'menu-wrapper-hide'
+					showMenuWrapper && !showMenu ? 'menu-wrapper' : 'menu-wrapper-hide'
 				}
 			>
-				<div className="menu-container" onClick={() => handleMenu()}>
+				<div className="menu-container" onClick={e => handleMenu(e)}>
 					<div
-						className={
-							menuClicked ? 'burger-line-one-clicked' : 'burger-line-one'
-						}
+						className={showMenu ? 'burger-line-one-clicked' : 'burger-line-one'}
+					></div>
+					<div
+						className={showMenu ? 'burger-line-two-clicked' : 'burger-line-two'}
 					></div>
 					<div
 						className={
-							menuClicked ? 'burger-line-two-clicked' : 'burger-line-two'
-						}
-					></div>
-					<div
-						className={
-							menuClicked ? 'burger-line-three-clicked' : 'burger-line-three'
+							showMenu ? 'burger-line-three-clicked' : 'burger-line-three'
 						}
 					></div>
 				</div>
