@@ -6,7 +6,7 @@ export default function View(props) {
 	return (
 		<div className="modal-container">
 			<span className="close-btn" onClick={() => handleClose()}>
-				X
+				&times;
 			</span>
 			<h3>Thank you for your feedback.</h3>
 		</div>

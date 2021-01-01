@@ -3,20 +3,17 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: red;
+	background: rgb(54, 133, 56);
 	border-radius: 0.4rem;
 	letter-spacing: 0.2rem;
-	height: 10rem;
-	width: 25rem;
-	animation: fade 0.4s linear;
+	line-height: 2.5rem;
+	min-height: 12rem;
+	animation: fade-in 0.4s linear;
 }
-
-/* @keyframes fade{
-  from
-} */
 
 .close-btn {
 	position: absolute;
+	font-size: 2rem;
 	top: 0.5rem;
 	right: 1rem;
 	transition: all 0.4s ease-in-out;
@@ -24,5 +21,5 @@
 }
 
 .close-btn:hover {
-	transform: scale(1.2);
+	transform: scale(1.5);
 }

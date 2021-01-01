@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import emailjs from 'emailjs-com';
 import { contactDetails } from '../contactDetails';
+import { handleModal } from '../../actions/handleModal';
 import View from './view';
 
 class Contact extends Component {
@@ -77,21 +79,23 @@ class Contact extends Component {
 
 	async handleSubmit(e) {
 		e.preventDefault();
-		const { service, template, id } = contactDetails;
-		await this.handleError();
-		try {
-			if (!this.state.errorMessage) {
-				await emailjs.send(service, template, this.state, id);
-				this.setState({
-					name: '',
-					email: '',
-					message: '',
-					// showModal: true,
-				});
-			}
-		} catch (error) {
-			console.log(error);
-		}
+		this.props.handleModal();
+		// this.setState({ showModal: true });
+		// const { service, template, id } = contactDetails;
+		// await this.handleError();
+		// try {
+		// 	if (!this.state.errorMessage) {
+		// 		await emailjs.send(service, template, this.state, id);
+		// 		this.setState({
+		// 			name: '',
+		// 			email: '',
+		// 			message: '',
+		// 			handleModal: true,
+		// 		});
+		// 	}
+		// } catch (error) {
+		// 	console.log(error);
+		// }
 	}
 
 	render() {
@@ -105,9 +109,15 @@ class Contact extends Component {
 				handleFocusOut={this.handleFocusOut}
 				handleSubmit={this.handleSubmit}
 				errorMessage={this.state.errorMessage}
+				showModal={this.props.showModal}
 			/>
 		);
 	}
 }
 
-export default Contact;
+const mapStateToProps = state => {
+	return {
+		showModal: state.showModal,
+	};
+};
+export default connect(mapStateToProps, { handleModal })(Contact);

@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 import View from './view';
+import { connect } from 'react-redux';
+import { handleModal } from '../../actions/handleModal';
 
 class ThankyouModal extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { showModal: false };
 		this.handleClose = this.handleClose.bind(this);
 	}
 
 	handleClose() {
-		console.log('clicked');
-		this.setState({
-			showModal: false,
-		});
+		this.props.handleModal();
 	}
 
 	render() {
 		return (
-			<View showModal={this.state.showModal} handleClose={this.handleClose} />
+			<View showModal={this.props.showModal} handleClose={this.handleClose} />
 		);
 	}
 }
 
-export default ThankyouModal;
+export default connect(null, { handleModal })(ThankyouModal);
