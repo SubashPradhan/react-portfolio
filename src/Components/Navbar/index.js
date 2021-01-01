@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import View from './view';
+import { connect } from 'react-redux';
+import { handleMenuClick } from '../../actions/handleMenuClick';
+
 class Navbar extends Component {
 	constructor(props) {
 		super(props);
 		this.handleMenu = this.handleMenu.bind(this);
-		this.handleClickOutside = this.handleClickOutside.bind(this);
+
 		this.state = {
-			menuClicked: false,
 			showMenuWrapper: false,
 		};
 
 		this.handleScrollView();
-		this.handleClickOutside();
-		this.handleMenu();
 	}
 
-	handleMenu() {
-		this.setState({
-			menuClicked: !this.state.menuClicked,
-		});
-	}
-
-	handleClickOutside() {
-		document.addEventListener('click', () => {
-			this.state.menuClicked && this.handleMenu();
-		});
+	handleMenu(e) {
+		e.stopPropagation();
+		this.props.handleMenuClick();
 	}
 
 	handleScrollView() {
@@ -42,12 +35,10 @@ class Navbar extends Component {
 		});
 	}
 
-	handleC;
-
 	render() {
 		return (
 			<View
-				menuClicked={this.state.menuClicked}
+				showMenu={this.props.showMenu}
 				handleMenu={this.handleMenu}
 				showMenuWrapper={this.state.showMenuWrapper}
 			/>
@@ -55,4 +46,10 @@ class Navbar extends Component {
 	}
 }
 
-export default Navbar;
+const mapStateToProps = state => {
+	return {
+		showMenu: state.showMenu,
+	};
+};
+
+export default connect(mapStateToProps, { handleMenuClick })(Navbar);
