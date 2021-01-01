@@ -9,12 +9,15 @@
     "emailjs-com": "^2.6.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2",
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.1.1",
     "react-typist": "^2.0.5",
-    "react-vertical-timeline-component": "^2.6.2"
+    "react-vertical-timeline-component": "^2.6.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
