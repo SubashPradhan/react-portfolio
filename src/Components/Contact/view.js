@@ -16,7 +16,6 @@ export default function View(props) {
 		showModal,
 	} = props;
 	const { name, email, message } = value;
-	console.log(showModal);
 
 	const error = <div className="error-msg">All fields are Required</div>;
 	const modal = (
