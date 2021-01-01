@@ -91,15 +91,17 @@
 		rgb(241, 99, 47)
 	);
 	overflow: hidden;
-	font-size: 1.4rem;
 	letter-spacing: 0.2rem;
 	padding: 0.3rem;
 	min-width: 10rem;
 	border: none;
-	box-shadow: 3px 7px 7px rgb(71, 70, 36);
+	box-shadow: 3px 7px 7px rgb(146, 146, 74);
 	transition: all 0.5s ease-in-out;
 	cursor: pointer;
 	margin-bottom: 3rem;
+	font-size: 1.4rem;
+	font-family: 'Yatra One';
+	font-weight: bold;
 }
 .submit-btn:focus {
 	outline: none;

@@ -79,23 +79,21 @@ class Contact extends Component {
 
 	async handleSubmit(e) {
 		e.preventDefault();
-		this.props.handleModal();
-		// this.setState({ showModal: true });
-		// const { service, template, id } = contactDetails;
-		// await this.handleError();
-		// try {
-		// 	if (!this.state.errorMessage) {
-		// 		await emailjs.send(service, template, this.state, id);
-		// 		this.setState({
-		// 			name: '',
-		// 			email: '',
-		// 			message: '',
-		// 			handleModal: true,
-		// 		});
-		// 	}
-		// } catch (error) {
-		// 	console.log(error);
-		// }
+		const { service, template, id } = contactDetails;
+		await this.handleError();
+		try {
+			if (!this.state.errorMessage) {
+				this.props.handleModal();
+				await emailjs.send(service, template, this.state, id);
+				this.setState({
+					name: '',
+					email: '',
+					message: '',
+				});
+			}
+		} catch (error) {
+			console.log(error);
+		}
 	}
 
 	render() {

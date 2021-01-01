@@ -1,6 +1,5 @@
 .dragon-balls {
-	height: 5rem;
-	width: 5rem;
+	width: 3.5rem;
 	animation: fade-in ease-in-out;
 }
 
@@ -15,7 +14,6 @@
 
 @media only screen and (max-width: 700px) {
 	.dragon-balls {
-		height: 2rem;
 		width: 2rem;
 	}
 }
