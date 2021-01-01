@@ -1,0 +1,28 @@
+.modal-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: red;
+	border-radius: 0.4rem;
+	letter-spacing: 0.2rem;
+	height: 10rem;
+	width: 25rem;
+	animation: fade 0.4s linear;
+}
+
+/* @keyframes fade{
+  from
+} */
+
+.close-btn {
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+.close-btn:hover {
+	transform: scale(1.2);
+}

@@ -94,7 +94,6 @@
 	font-size: 1.4rem;
 	letter-spacing: 0.2rem;
 	padding: 0.3rem;
-	margin-top: 10px;
 	min-width: 10rem;
 	border: none;
 	box-shadow: 3px 7px 7px rgb(71, 70, 36);
@@ -152,6 +151,11 @@
 	100% {
 		transform: rotate(0) scale(1);
 	}
+}
+
+.modal {
+	position: absolute;
+	top: 20%;
 }
 @media only screen and (max-width: 700px) {
 	.field {

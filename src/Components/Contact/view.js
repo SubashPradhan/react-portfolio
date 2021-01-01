@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../Style/Contact.css';
 import Tada from 'react-reveal/Tada';
+import ThankyouModal from '../ThankyouModal';
 
 export default function View(props) {
 	const {
@@ -77,6 +78,9 @@ export default function View(props) {
 						/>
 					</div>
 					<button className="submit-btn">Submit</button>
+					<div className="modal">
+						<ThankyouModal showModal="false" />
+					</div>
 				</form>
 			</div>
 		</div>
