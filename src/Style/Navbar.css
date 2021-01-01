@@ -3,11 +3,11 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	background: rgb(48, 49, 56);
+	background: rgba(48, 49, 56, 0.8);
 	transition: all 0.5s ease-in-out;
-	transform-style: preserve-3d;
 	position: fixed;
 	z-index: 1;
+	perspective: 1000px;
 }
 
 .navbar-show {
@@ -22,20 +22,23 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	overflow: hidden;
+	transform-style: preserve-3d;
 }
 
 .navbar-links {
 	font-size: 2rem;
 	color: white;
 	text-align: center;
-	transition: all 0.4s ease-in-out;
 	text-decoration: none;
+	transition: all 0.4s ease-in-out;
 	padding: 2rem;
 }
 
 .navbar-links:hover {
-	transform: scale(1.3);
+	color: #f85b1a;
+	transform: rotate3d(1.8, 1.5, 1.5, -10deg) scale3d(1.2, 1.2, 1.2)
+		translateZ(3rem);
+	font-weight: bold;
 }
 
 .personal-social-profiles {
@@ -51,7 +54,14 @@
 }
 
 .personal-social-profiles div:hover {
-	transform: scale(1.4);
+	animation: rotate 0.4s ease-in-out;
+	transform: scale3d(1.4, 1.4, 1.4);
+}
+
+@keyframes rotate {
+	from {
+		transform: scale3d(-1, 1, 1);
+	}
 }
 
 #linkedIn-icon {
@@ -87,11 +97,11 @@
 	position: fixed;
 	right: 1rem;
 	top: 1rem;
-	z-index: 2;
+	z-index: 1;
 	cursor: pointer;
 }
 .menu-wrapper {
-	background: rgb(48, 49, 56);
+	background: rgba(48, 49, 56, 0.8);
 	width: 100%;
 	height: 4rem;
 	z-index: 1;
