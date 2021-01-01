@@ -1,0 +1,154 @@
+.navbar-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: rgba(48, 49, 56, 0.8);
+	transition: all 0.5s ease-in-out;
+	position: fixed;
+	z-index: 1;
+	perspective: 1000px;
+}
+
+.navbar-show {
+	transform: translateY(0);
+}
+
+.navbar-hide {
+	transform: translateY(-100%);
+}
+
+.navbar-links-contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transform-style: preserve-3d;
+}
+
+.navbar-links {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out;
+	padding: 2rem;
+}
+
+.navbar-links:hover {
+	color: #f85b1a;
+	transform: rotate3d(1.8, 1.5, 1.5, -10deg) scale3d(1.2, 1.2, 1.2)
+		translateZ(3rem);
+	font-weight: bold;
+}
+
+.personal-social-profiles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.personal-social-profiles div {
+	margin: 2rem;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+}
+
+.personal-social-profiles div:hover {
+	animation: rotate 0.4s ease-in-out;
+	transform: scale3d(1.4, 1.4, 1.4);
+}
+
+@keyframes rotate {
+	from {
+		transform: scale3d(-1, 1, 1);
+	}
+}
+
+#linkedIn-icon {
+	color: rgb(1, 132, 255);
+}
+
+#instagram-icon {
+	color: red;
+}
+
+#github-icon {
+	color: white;
+}
+
+.subash-img {
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+.subash-img:hover {
+	transform: scale(2);
+	top: 4rem;
+	left: 4rem;
+}
+
+.menu-container {
+	position: fixed;
+	right: 1rem;
+	top: 1rem;
+	z-index: 1;
+	cursor: pointer;
+}
+.menu-wrapper {
+	background: rgba(48, 49, 56, 0.8);
+	width: 100%;
+	height: 4rem;
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+	position: fixed;
+}
+
+.menu-wrapper-hide {
+	height: 0;
+}
+.menu-container div {
+	height: 0.2rem;
+	margin: 0.5rem;
+	background-color: white;
+	transition: all 0.4s ease-in-out;
+}
+
+.burger-line-one {
+	width: 1rem;
+}
+
+.burger-line-two {
+	width: 1.5rem;
+}
+
+.burger-line-three {
+	width: 2.5rem;
+}
+
+.burger-line-one-clicked {
+	width: 2.5rem;
+	transform: rotate(-45deg) translate(-1rem, 1rem);
+}
+
+.burger-line-two-clicked {
+	width: 0;
+	opacity: 0;
+}
+
+.burger-line-three-clicked {
+	width: 2.5rem;
+	transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 700px) {
+	.subash-img {
+		height: 4rem;
+		width: 4rem;
+	}
+}

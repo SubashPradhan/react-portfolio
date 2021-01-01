@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-import Navigator from './Components/Home/Navigator';
 import Main from './Components/Main';
-import Footer from './Components/Footer';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
 	render() {
-		return (
-			<div>
-				<Navigator />
-				<Main />
-				<Footer />
-			</div>
-		);
+		return <Route exact path="/" component={Main} />;
 	}
 }
 

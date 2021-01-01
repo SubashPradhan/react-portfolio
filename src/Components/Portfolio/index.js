@@ -1,59 +1,39 @@
 import React, { Component } from 'react';
-import View from '../Portfolio/view';
+import View from './view';
 
-const IMAGES = [
-	{
-		src: require('../assets/movie-app.gif'),
-		thumbnail: require('../assets/movie-thumb.png'),
-		thumbnailWidth: 700,
-		thumbnailHeight: 250,
-		tags: [{ value: 'Movie-app', title: 'Movie-app' }],
-		caption:
-			'Simple movie-search app for two days Hackathon at Codaisseur. Hackathon project - Vue CLI, Vuetify, Axios ',
-	},
-	{
-		src: require('../assets/gitgud.gif'),
-		thumbnail: require('../assets/gitgud.png'),
-		thumbnailWidth: 700,
-		thumbnailHeight: 250,
-		tags: [{ value: 'Git-gud', title: 'Git-gud' }],
-		caption:
-			'A validator of your GitHub profile and Git use, designed to provide feedback for job seekers and graduated students.Real Wrold Project- GraphQl, React-Apollo, Face-api',
-	},
+class PortfolioNew extends Component {
+	constructor(props) {
+		super(props);
+		this.portfolioRef = React.createRef();
+	}
 
-	{
-		src: require('../assets/fullstack.gif'),
-		thumbnail: require('../assets/first-react.png'),
-		thumbnailWidth: 600,
-		thumbnailHeight: 250,
-		tags: [{ value: 'First-fullstack-app', title: 'FullStack' }],
-		caption:
-			'My Very first FullStack App. Group Project - Sequelize, Express, React, Redux, Rest-Api ',
-	},
-	{
-		src: require('../assets/hangman.gif'),
-		thumbnail: require('../assets/hangman.png'),
-		thumbnailWidth: 600,
-		thumbnailHeight: 250,
-		tags: [{ value: 'Hangaman-game', title: 'Hangaman' }],
-		caption:
-			'A fullstack Hangman game with logins.Group Project - Express, Sequelize, Bcrypt, Jsonwebtoken, React, Redux',
-	},
-	{
-		src: require('../assets/html-portfolio.gif'),
-		thumbnail: require('../assets/html-portfolio.png'),
-		thumbnailWidth: 600,
-		thumbnailHeight: 250,
-		tags: [{ value: 'Plain-HTML-Portfolio', title: 'First-PortFolio' }],
-		caption:
-			'My very first portfolio using plain HTML, CSS, Javascript, Jquery.',
-	},
-];
+	componentDidMount() {
+		this.handlePortfolioHover(this.portfolioRef);
+	}
 
-class Portfolio extends Component {
+	handlePortfolioHover(reference) {
+		const childNodes = reference.current.childNodes;
+		childNodes.forEach(child => {
+			this.handleMouse(child);
+		});
+	}
+
+	handleMouse(htmlElement) {
+		const children = htmlElement.childNodes;
+		htmlElement.addEventListener('mouseenter', () => {
+			children.forEach(child => {
+				child.style.transform = 'translateZ(5rem)';
+			});
+		});
+		htmlElement.addEventListener('mouseleave', () => {
+			children.forEach(child => {
+				child.style.transform = 'translateZ(0)';
+			});
+		});
+	}
 	render() {
-		return <View images={IMAGES} />;
+		return <View portfolioRef={this.portfolioRef} />;
 	}
 }
 
-export default Portfolio;
+export default PortfolioNew;

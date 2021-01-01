@@ -1,33 +1,93 @@
-import React from 'react'
+import React from 'react';
+import '../../Style/Contact.css';
 import Tada from 'react-reveal/Tada';
-import useForm from 'react-hook-form'
-import "../Style/Contact.css";
+import ThankyouModal from '../ThankyouModal';
 
 export default function View(props) {
+	const {
+		value,
+		isEmail,
+		isName,
+		handleChange,
+		handleFocus,
+		handleFocusOut,
+		handleSubmit,
+		errorMessage,
+		showModal,
+	} = props;
+	const { name, email, message } = value;
+	console.log(showModal);
 
-  const { register, handleSubmit, errors } = useForm()
-  const { onSubmit, error, name } = props
-  return <div align='center'>
-    <Tada>
-      <h1>Contact Me</h1>
-    </Tada>
+	const error = <div className="error-msg">All fields are Required</div>;
+	const modal = (
+		<div className="modal">
+			<ThankyouModal />
+		</div>
+	);
 
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label>Name :</label>
-      <input name="name" ref={register({ required: true })} />
-      {errors.name && <span className='error-msg'>Please enter your <b>Name !!</b></span>}
+	return (
+		<div className="contact-container">
+			<Tada>
+				<h1>"Contact"</h1>
+			</Tada>
+			{errorMessage && error}
+			<div className="form-container">
+				<form
+					className="form"
+					onSubmit={e => handleSubmit(e)}
+					autoComplete="off"
+				>
+					<div className="field">
+						<input
+							className="form-input"
+							id="name"
+							type="text"
+							value={name}
+							onChange={e => handleChange(e, 'name')}
+							onFocus={e => handleFocus(e)}
+							onBlur={e => handleFocusOut(e)}
+						></input>
+						<label
+							className={isName ? 'form-label form-label-focus' : 'form-label'}
+							id="label-name"
+						>
+							Name:
+						</label>
+					</div>
 
-      <label>Email :</label>
-      <input name="email" ref={register({ required: true })} />
-      {errors.email && <span className='error-msg'>Please enter your <b>Email !!</b></span>}
+					<div className="field">
+						<input
+							className="form-input"
+							id="email"
+							type="text"
+							value={email}
+							onChange={e => handleChange(e, 'email')}
+							onFocus={e => handleFocus(e)}
+							onBlur={e => handleFocusOut(e)}
+						></input>
+						<label
+							className={isEmail ? 'form-label form-label-focus' : 'form-label'}
+							id="label-email"
+						>
+							Email:
+						</label>
+					</div>
 
-      <label>Message :</label>
-      <textarea name='msg' ref={register} className='textfield' />
-      <input type="submit" />
-    </form>
-    {error && <div className='error-msg'>
-      Thank you {name} for your message !!<br />
-      Will get back to you soon !!!
-      </div>}
-  </div>
+					<div className="field">
+						<label className="textarea-label">
+							Feedbacks are always appreciated.
+						</label>
+						<textarea
+							className="form-textarea"
+							value={message}
+							placeholder="Your Feedbacks."
+							onChange={e => handleChange(e, 'message')}
+						/>
+					</div>
+					<button className="submit-btn">Submit</button>
+					{showModal && modal}
+				</form>
+			</div>
+		</div>
+	);
 }

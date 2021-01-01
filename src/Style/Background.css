@@ -1,0 +1,19 @@
+.dragon-balls {
+	width: 3.5rem;
+	animation: fade-in ease-in-out;
+}
+
+@keyframes fade-in {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.dragon-balls {
+		width: 2rem;
+	}
+}
