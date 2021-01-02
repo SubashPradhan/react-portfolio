@@ -80,17 +80,24 @@ export default function View(props) {
 				</div>
 			</div>
 			<div
-				className="menu-wrapper"
-				// className={
-				// 	showMenuWrapper ? 'menu-wrapper' : 'menu-wrapper menu-wrapper-hide'
-				// }
+				className={
+					!showMenu && showMenuWrapper
+						? 'menu-wrapper menu-wrapper-scroll'
+						: 'menu-wrapper'
+				}
 			>
 				<div className="subash-logo">
 					<img
 						src={SubashLogo}
 						title="Subash Pradhan"
 						alt="Subash Logo"
-						className="subash-logo-img"
+						className={
+							showMenu
+								? 'hide'
+								: showMenuWrapper
+								? 'subash-logo-img-scroll'
+								: 'subash-logo-img'
+						}
 					/>
 				</div>
 				<div className="menu-container" onClick={e => handleMenu(e)}>
