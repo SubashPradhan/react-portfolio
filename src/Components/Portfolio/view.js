@@ -75,8 +75,6 @@ export default function View(props) {
 							</a>
 						</button>
 					</div>
-				</Fade>
-				<Fade bottom>
 					<div className="portfolio">
 						<h3 className="portfolio-title">Movie App</h3>
 						<img
