@@ -35,13 +35,6 @@
 	padding: 2rem;
 }
 
-.curly-braces {
-	display: none;
-}
-
-.navbar-links:hover > .curly-braces {
-	display: inline-block;
-}
 .navbar-links:hover {
 	color: #f85b1a;
 	transform: rotate3d(1.8, 1.5, 1.5, -10deg) scale3d(1.2, 1.2, 1.2)
