@@ -20,19 +20,19 @@ export default function View(props) {
 			>
 				<div className="navbar-links-contents">
 					<a href="#home" className="navbar-links">
-						Home
+						{'( Home )'}
 					</a>
 					<a href="#about" className="navbar-links">
-						About Me
+						{'{ About Me }'}
 					</a>
 					<a href="#portfolio" className="navbar-links">
-						Portfolio
+						{'< Portfolio / >'}
 					</a>
 					<a href="#skills" className="navbar-links">
-						Skills
+						{'[ Skills ]'}
 					</a>
 					<a href="#contact" className="navbar-links">
-						Contact
+						{'\n" Contact "\n'}
 					</a>
 					<div className="personal-social-profiles">
 						<div>
