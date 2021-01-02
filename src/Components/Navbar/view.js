@@ -3,6 +3,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Subash from '../../assets/subash.jpg';
+import SubashLogo from '../../assets/subash-logo.svg';
 import '../../Style/Navbar.css';
 
 export default function View(props) {
@@ -80,9 +81,25 @@ export default function View(props) {
 			</div>
 			<div
 				className={
-					showMenuWrapper && !showMenu ? 'menu-wrapper' : 'menu-wrapper-hide'
+					!showMenu && showMenuWrapper
+						? 'menu-wrapper menu-wrapper-scroll'
+						: 'menu-wrapper'
 				}
 			>
+				<div className="subash-logo">
+					<img
+						src={SubashLogo}
+						title="Subash Pradhan"
+						alt="Subash Logo"
+						className={
+							showMenu
+								? 'hide'
+								: showMenuWrapper
+								? 'subash-logo-img-scroll'
+								: 'subash-logo-img'
+						}
+					/>
+				</div>
 				<div className="menu-container" onClick={e => handleMenu(e)}>
 					<div
 						className={showMenu ? 'burger-line-one-clicked' : 'burger-line-one'}
