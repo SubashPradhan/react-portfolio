@@ -16,7 +16,7 @@
 }
 
 .skill-icons {
-	width: 100%;
+	max-width: 10rem;
 	height: 7rem;
 }
 
