@@ -21,7 +21,7 @@ export default function View(props) {
 				{'< Portfolio />'}
 			</a>
 			<a href="#skills" className="navbar-links">
-				{'[ Skills ]'}
+				[ Skills ]
 			</a>
 			<a href="#contact" className="navbar-links">
 				" Contact "
