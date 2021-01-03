@@ -1,6 +1,7 @@
 .navbar-container {
 	position: fixed;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	background: rgba(48, 49, 56, 0.8);
@@ -27,7 +28,7 @@
 
 .navbar-links {
 	font-size: 2rem;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.15rem;
 	color: white;
 	text-align: center;
 	text-decoration: none;
