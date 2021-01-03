@@ -40,7 +40,6 @@
 .portfolio-btn {
 	margin: 1rem;
 	border-radius: 1rem;
-	/* z-index: 1; */
 	transition: all 0.5s ease-in-out;
 }
 
