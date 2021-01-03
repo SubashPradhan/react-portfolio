@@ -16,7 +16,7 @@ export default function View() {
 	return (
 		<div className="skills-container">
 			<Tada>
-				<h1>{'[ Skills ]'}</h1>
+				<h1>[ Skills ]</h1>
 			</Tada>
 			<div className="skills-collections">
 				<Fade left>
