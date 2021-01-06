@@ -1,5 +1,5 @@
 .dragon-balls {
-	width: 3.5rem;
+	width: 2rem;
 	animation: fade-in ease-in-out;
 }
 
@@ -9,11 +9,5 @@
 	}
 	to {
 		transform: scale(1);
-	}
-}
-
-@media only screen and (max-width: 700px) {
-	.dragon-balls {
-		width: 2rem;
 	}
 }

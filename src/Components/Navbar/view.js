@@ -96,18 +96,20 @@ export default function View(props) {
 				}
 			>
 				<div className="subash-logo">
-					<img
-						src={SubashLogo}
-						title="Subash Pradhan"
-						alt="Subash Logo"
-						className={
-							showMenu
-								? 'hide'
-								: showMenuWrapper
-								? 'subash-logo-img-scroll'
-								: 'subash-logo-img'
-						}
-					/>
+					<a href="#home">
+						<img
+							src={SubashLogo}
+							title="Subash Pradhan"
+							alt="Subash Logo"
+							className={
+								showMenu
+									? 'hide'
+									: showMenuWrapper
+									? 'subash-logo-img-scroll'
+									: 'subash-logo-img'
+							}
+						/>
+					</a>
 				</div>
 				<div className="menu-container" onClick={e => handleMenu(e)}>
 					<div
