@@ -59,22 +59,34 @@ class Background extends Component {
 	handleScroll(leftNode, rightNode) {
 		let startingDegreeRight = 0;
 		let startingDegreeLeft = 0;
+		let transformRight = 0;
+		let transformLeft = 0;
+		const transformIncrement = 0.1;
+		const rotateIncrement = 1;
 		let prevScrollY = window.pageYOffset;
 
 		window.addEventListener('scroll', () => {
 			leftNode.forEach(symbol => {
-				symbol.style.transform = `translateY(${startingDegreeLeft}px) rotate(${startingDegreeRight}deg`;
+				symbol.style.transform = `translateY(${transformLeft}px) rotate(${startingDegreeLeft}deg)`;
 				startingDegreeLeft =
 					window.scrollY > prevScrollY
-						? startingDegreeLeft + 0.15
-						: startingDegreeLeft - 0.15;
+						? startingDegreeLeft + rotateIncrement
+						: startingDegreeLeft - rotateIncrement;
+				transformLeft =
+					window.scrollY > prevScrollY
+						? transformLeft + transformIncrement
+						: transformLeft - transformIncrement;
 			});
 			rightNode.forEach(symbol => {
-				symbol.style.transform = `translateY(${startingDegreeRight}px) rotate(${startingDegreeRight}deg)`;
+				symbol.style.transform = `translateY(${transformRight}px) rotate(${startingDegreeRight}deg)`;
 				startingDegreeRight =
 					window.scrollY < prevScrollY
-						? startingDegreeRight + 0.15
-						: startingDegreeRight - 0.15;
+						? startingDegreeRight + rotateIncrement
+						: startingDegreeRight - rotateIncrement;
+				transformRight =
+					window.scrollY < prevScrollY
+						? transformRight + transformIncrement
+						: transformRight - transformIncrement;
 			});
 			prevScrollY = window.pageYOffset;
 		});
