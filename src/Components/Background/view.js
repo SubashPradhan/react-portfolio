@@ -1,12 +1,13 @@
 import React from 'react';
 import '../../Style/Background.css';
-import DragonballOne from '../../assets/DragonBall-1.svg';
-import DragonballTwo from '../../assets/DragonBall-2.svg';
-import DragonballThree from '../../assets/DragonBall-3.svg';
-import DragonballFour from '../../assets/DragonBall-4.svg';
-import DragonballFive from '../../assets/DragonBall-5.svg';
-import DragonballSix from '../../assets/DragonBall-6.svg';
-import DragonballSeven from '../../assets/DragonBall-7.svg';
+import PuzzleRed from '../../assets/puzzle-red.svg';
+import PuzzleBlue from '../../assets/puzzle-blue.svg';
+import PuzzleGreen from '../../assets/puzzle-green.svg';
+import PuzzleYellow from '../../assets/puzzle-yellow.svg';
+import SemiCircle from '../../assets/semi-circle.svg';
+import Hexagon from '../../assets/hexagon.svg';
+import Triangle from '../../assets/triangle.svg';
+import Star from '../../assets/star.svg';
 
 export default function View(props) {
 	const {
@@ -14,18 +15,30 @@ export default function View(props) {
 		randomLettersRefRight,
 		randomLettersRefLeft,
 	} = props;
+
+	const confettis = (
+		<>
+			<img src={PuzzleBlue} alt="Background confettis" className="confettis" />
+			<img src={PuzzleGreen} alt="Background confettis" className="confettis" />
+			<img src={PuzzleRed} alt="Background confettis" className="confettis" />
+			<img
+				src={PuzzleYellow}
+				alt="Background confettis"
+				className="confettis"
+			/>
+			<img src={SemiCircle} alt="Background confettis" className="confettis" />
+			<img src={Triangle} alt="Background confettis" className="confettis" />
+			<img src={Star} alt="Background confettis" className="confettis" />
+			<img src={Hexagon} alt="Background confettis" className="confettis" />
+		</>
+	);
 	return (
 		<div ref={randomLettersContainer} className="background-container">
 			<div className="random-letters-left" ref={randomLettersRefLeft}>
-				<img src={DragonballOne} alt="Dragon ball" className="dragon-balls" />
-				<img src={DragonballFour} alt="Dragon ball" className="dragon-balls" />
-				<img src={DragonballFive} alt="Dragon ball" className="dragon-balls" />
-				<img src={DragonballSeven} alt="Dragon ball" className="dragon-balls" />
+				{confettis}
 			</div>
 			<div className="random-letters-right" ref={randomLettersRefRight}>
-				<img src={DragonballTwo} alt="Dragon ball" className="dragon-balls" />
-				<img src={DragonballThree} alt="Dragon ball" className="dragon-balls" />
-				<img src={DragonballSix} alt="Dragon ball" className="dragon-balls" />
+				{confettis}
 			</div>
 		</div>
 	);
