@@ -11,10 +11,10 @@ class Background extends Component {
 
 	componentDidMount() {
 		const currentClientWidth = document.documentElement.clientWidth;
-		const minWidthRight = currentClientWidth - 400;
-		const maxWidthRight = currentClientWidth - 50;
-		const minWidthLeft = 20;
-		const maxWidthLeft = 400;
+		const minWidthRight = currentClientWidth / 2;
+		const maxWidthRight = currentClientWidth;
+		const minWidthLeft = 0;
+		const maxWidthLeft = minWidthRight;
 
 		this.renderSymbols(this.randomLettersRefLeft, minWidthLeft, maxWidthLeft);
 		this.renderSymbols(
@@ -41,7 +41,7 @@ class Background extends Component {
 		const childNodes = reference.current.childNodes;
 		const arrayOfChildNodes = Array.from(childNodes);
 		const currentClientHeight = document.documentElement.clientHeight;
-		let animationDelay = 1;
+		let animationDelay = 0.2;
 
 		arrayOfChildNodes.forEach(child => {
 			const randomPositionHeight = this.getRandomNumber(0, currentClientHeight);
@@ -62,7 +62,7 @@ class Background extends Component {
 		let transformRight = 0;
 		let transformLeft = 0;
 		const transformIncrement = 0.1;
-		const rotateIncrement = 1;
+		const rotateIncrement = 0.5;
 		let prevScrollY = window.pageYOffset;
 
 		window.addEventListener('scroll', () => {
