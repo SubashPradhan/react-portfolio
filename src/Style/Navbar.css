@@ -116,9 +116,8 @@
 }
 
 .subash-logo-img {
-	height: 15rem;
+	height: 13rem;
 	transition: all 0.4s ease-in-out;
-	/* animation: fall-in 0.7s ease-in-out; */
 }
 
 .subash-logo-img-scroll {
