@@ -1,6 +1,7 @@
 import React from 'react';
 import Tada from 'react-reveal/Tada';
 import CastForEducationIcon from '@material-ui/icons/CastForEducation';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import WorkIcon from '@material-ui/icons/Work';
 import HotelIcon from '@material-ui/icons/Hotel';
 import EuroIcon from '@material-ui/icons/Euro';
@@ -24,9 +25,36 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element"
 					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-					date="2018 - present"
-					iconStyle={{ background: '#cf993c', color: '#fff' }}
+					date="2021 - present"
+					iconStyle={{ background: 'green', color: '#fff' }}
 					icon={<WorkIcon />}
+				>
+					<h3 className="vertical-timeline-element-title">
+						Nylas - Technical Support Engineer.
+					</h3>
+					<h4 className="vertical-timeline-element-subtitle">
+						Remote (Full Time)
+					</h4>
+					<p>
+						Nylas is an email client that provides API as a service. With Nylas
+						API developers around the world can connect their applications to
+						any email inbox, contacts, and calendars in no time. As a
+						fast-growing tech startup company, there are always unseen tech
+						challenges despite a lot of tests and QAs, and that’s where we jump
+						in, we help developers to integrate their applications with Nylas
+						API to make the integration process efficient and smooth, support
+						them with any issues which can occur during or before the service
+						period and continuously work with developers from all around the
+						world to make our product better than ever.
+					</p>
+				</VerticalTimelineElement>
+
+				<VerticalTimelineElement
+					className="vertical-timeline-element"
+					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+					date="2018 - 2021"
+					iconStyle={{ background: '#d13ca4', color: '#fff' }}
+					icon={<SupervisedUserCircleIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
 						Appen - Social media evaluator.
@@ -47,7 +75,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2019 - 2019"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: '#7fc3c0', color: '#fff' }}
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
@@ -70,7 +98,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2017 - 2018"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: '#b9925e', color: '#fff' }}
 					icon={<HotelIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
@@ -89,7 +117,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2016 - 2017"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: 'blue', color: '#fff' }}
 					icon={<CastForEducationIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
@@ -110,7 +138,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="2015 - 2016"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: '#befc03', color: '#fff' }}
 					icon={<EuroIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
@@ -128,7 +156,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="August 2013"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: '#fc6f03', color: '#fff' }}
 					icon={<FlightTakeoffIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
@@ -146,7 +174,7 @@ export default function View() {
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="2010 - 2013"
-					iconStyle={{ background: 'green', color: '#fff' }}
+					iconStyle={{ background: 'black', color: '#fff' }}
 					icon={<LaptopMacIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">

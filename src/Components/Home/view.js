@@ -18,7 +18,7 @@ export default function View() {
 				<Typist cursor={{ show: false }}>
 					Hi, I am Subash Pradhan.
 					<br />
-					- Web Developer.
+					- Support Engineer @ Nylas.
 					<br />
 					Welcome & Nice To Meet You.
 				</Typist>
