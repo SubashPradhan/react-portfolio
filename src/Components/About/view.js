@@ -30,22 +30,19 @@ export default function View() {
 					icon={<WorkIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">
-						Nylas - Technical Support Engineer.
+						Nylas - Sr. Developer Support Engineer / Production Support Lead.
 					</h3>
 					<h4 className="vertical-timeline-element-subtitle">
 						Remote (Full Time)
 					</h4>
 					<p>
-						Nylas is an email client that provides API as a service. With Nylas
-						API developers around the world can connect their applications to
-						any email inbox, contacts, and calendars in no time. As a
-						fast-growing tech startup company, there are always unseen tech
-						challenges despite a lot of tests and QAs, and that’s where we jump
-						in, we help developers to integrate their applications with Nylas
-						API to make the integration process efficient and smooth, support
-						them with any issues which can occur during or before the service
-						period and continuously work with developers from all around the
-						world to make our product better than ever.
+					Nylas is a API company that provides true power of communications for developers
+					to build applications that integrate with multiple email, calendar, and contacts 
+					sources such as Gmail, Microsoft Exchange, and more. 
+					Our tools remove complexity and empower developers to build world-class user
+					experiences with embedded email and scheduling capabilities.
+					As a developer support engineer our job is to ensure Nylas integration goes smooth
+					and help developers with any issues with Nylas APIs.
 					</p>
 				</VerticalTimelineElement>
 
