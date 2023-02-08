@@ -2,7 +2,7 @@ import React from 'react';
 import MovieApp from '../../assets/movie-app.png';
 import QuizApp from '../../assets/quiz-app.png';
 import ProjectManagementApp from '../../assets/project-management.png';
-import CoronaUpdatesApp from '../../assets/corona-updates.png';
+import NylasApiTool from '../../assets/nylas-api-tool.png';
 import Carousel from '../../assets/3d-carousel.png';
 import HtmlPortfolio from '../../assets/html-portfolio.png';
 import { Fade } from 'react-reveal';
@@ -19,16 +19,16 @@ export default function View(props) {
 			<div className="portfolio-collections" ref={portfolioRef}>
 				<Fade bottom>
 					<div className="portfolio">
-						<h3 className="portfolio-title">Corona Updates</h3>
+						<h3 className="portfolio-title">3D Carousel</h3>
 						<img
-							src={CoronaUpdatesApp}
-							title="Corona Updates App"
-							alt="Corona Updates App"
+							src={Carousel}
+							title="3d Carousel"
+							alt="3d Carousel"
 							className="portfolio-img"
 						/>
 						<button className="portfolio-btn">
 							<a
-								href="https://covid-19-updates.netlify.app/"
+								href="https://html-image-carousel.netlify.app/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="btn-links"
@@ -57,16 +57,16 @@ export default function View(props) {
 						</button>
 					</div>
 					<div className="portfolio">
-						<h3 className="portfolio-title">3D Carousel</h3>
+						<h3 className="portfolio-title">Nylas API Tool</h3>
 						<img
-							src={Carousel}
-							title="3d Carousel"
-							alt="3d Carousel"
+							src={NylasApiTool}
+							title="Nylas API tool"
+							alt="Nylas API tool"
 							className="portfolio-img"
 						/>
 						<button className="portfolio-btn">
 							<a
-								href="https://html-image-carousel.netlify.app/"
+								href="https://nylas-api-tool.netlify.app/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="btn-links"
