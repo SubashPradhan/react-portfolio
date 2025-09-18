@@ -1,6 +1,14 @@
 [build]
-  command = "npm run build"
+  command = "./build.sh"
   publish = "build"
 
 [build.environment]
   NODE_VERSION = "19.9.0"
+
+# Explicitly override any UI-configured plugins that cause conflicts
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs]
+  # Set to skip lighthouse to avoid node version conflicts
+  skip = true
