@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './Components/Navbar.jsx';
-import Hero from './Components/Hero.jsx';
-import CreativeAbout from './Components/About/CreativeAbout.jsx';
-import CreativeProjects from './Components/Projects/CreativeProjects.jsx';
-import CreativeSkills from './Components/Skills/CreativeSkills.jsx';
-import Contact from './Components/Contact.jsx';
-import Footer from './Components/Footer.jsx';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import CreativeAbout from './Components/About/CreativeAbout';
+import CreativeProjects from './Components/Projects/CreativeProjects';
+import CreativeSkills from './Components/Skills/CreativeSkills';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import './styles/globals.css';
 
 function App() {
