@@ -185,7 +185,6 @@ const CreativeProjects = () => {
                       {project.description}
                     </p>
 
-
                     {/* Tech stack - Show all skills */}
                     <div className="flex flex-wrap gap-1 mb-4">
                       {project.tech.map((tech) => (
@@ -247,7 +246,7 @@ const CreativeProjects = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               className="rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-            style={{ background: 'var(--color-card-bg)', border: '1px solid var(--color-card-border)' }}
+              style={{ background: 'var(--color-card-bg)', border: '1px solid var(--color-card-border)' }}
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
@@ -266,7 +265,6 @@ const CreativeProjects = () => {
                 <p className="mb-6 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
                   {selectedProject.fullDescription}
                 </p>
-
 
                 {/* Tech stack */}
                 <div className="mb-6">
