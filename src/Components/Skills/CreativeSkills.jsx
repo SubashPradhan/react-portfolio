@@ -65,7 +65,6 @@ const CreativeSkills = () => {
     }
   ];
 
-
   return (
     <section id="skills" className="relative py-24 overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }} ref={ref}>
       {/* Background */}
@@ -157,7 +156,6 @@ const CreativeSkills = () => {
             </motion.div>
           ))}
         </div>
-
 
         {/* Soft Skills */}
         <motion.div
